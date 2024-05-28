@@ -14,7 +14,7 @@ class BaseEKG:
         self.all_events_order = []
         self.all_events = {}
         self.stalling_events = []
-        self.not_df = []
+        self.not_df = {}
         self.ambiguous_corr = {}
 
     def close(self):
@@ -39,37 +39,102 @@ class BaseEKG:
         # ------------> 14: end for <---------------- #
         ambiguity, custom_attributes, resolved_ambiguity = self.create_prob_corrs(event_name, event_attributes, event_specific_rule, current_event_id, self.custom_attributes, self.ambiguous_corr, self.all_events)
         if ambiguity:
-            to_delete = []
+            corrs_to_delete = []
             one_ambiguous = 0
             for amb in ambiguity:
                 new_element_id, new_element_start, new_element_end, new_element_type, new_element_properties = amb
                 if new_element_properties["probability"] == 0.0:
-                    to_delete.append(int(new_element_id))
+                    corrs_to_delete.append(int(new_element_id))
                 elif new_element_properties["probability"] != 1.0:
                     one_ambiguous += 1
                     self.ambiguous_corr[new_element_id] = [new_element_start, new_element_end, new_element_type, new_element_properties]
-            if len(to_delete) > 0:
-                self.delete_empty_corrs(to_delete)
-            if resolved_ambiguity:
-                for resolved in resolved_ambiguity:
-                    del self.ambiguous_corr[resolved[0]]
-            ############################################# NEED TO FIGURE OUT HOW TO DELETE STALLING EVENTS
             if one_ambiguous > 0:
                 self.stalling_events.append(f"Stalling_from_{current_event_id}")
+            if resolved_ambiguity:
+                if len(resolved_ambiguity) > 0:
+                    if resolved_ambiguity[0] == "NEED DF":
+                        for my_event_id in resolved_ambiguity[2:]:
+                            new_dfs = self.create_df(None, resolved_ambiguity[1], "NEED DF", my_event_id)
+                            if new_dfs:
+                                for new_df in new_dfs:
+                                    rs_df, rs_rxx_id, rs_rxx_prob_float, rs_rxx_has_qm, rs_ryy_id, rs_ryy_prob_float, rs_ryy_has_qm = new_df
+                                    if rs_rxx_has_qm or rs_ryy_has_qm:
+                                        rs_df_id = int(rs_df.element_id.split(":")[-1])
+                                        self.not_df[rs_df_id] = [rs_rxx_id, rs_rxx_prob_float, rs_rxx_has_qm, rs_ryy_id, rs_ryy_prob_float, rs_ryy_has_qm]
+            df_to_delete = []
+            df_to_update = []
+            if resolved_ambiguity:
+                if len(resolved_ambiguity) > 0:
+                    if resolved_ambiguity[0] != "NEED DF":
+                        for resolved_corr in resolved_ambiguity:
+                            k, v, _ = resolved_corr
+                            del self.ambiguous_corr[k]
+                            for df_k, df_v in self.not_df.items():
+                                if int(k) == df_v[0]:
+                                    self.not_df[df_k][1] = v[3]["probability"]
+                                    self.not_df[df_k][2] = False
+                                elif int(k) == df_v[3]:
+                                    self.not_df[df_k][4] = v[3]["probability"]
+                                    self.not_df[df_k][5] = False
+            for corr_k, corr_v in self.ambiguous_corr.items():
+                for df_k, df_v in self.not_df.items():
+                    if int(corr_k) == df_v[0]:
+                        new_prob = corr_v[3]["probability"]
+                        if isinstance(new_prob, str):
+                            self.not_df[df_k][1] = float(new_prob[:-1])
+                            self.not_df[df_k][2] = True
+                        else:
+                            self.not_df[df_k][1] = new_prob
+                            self.not_df[df_k][2] = False
+                    elif int(corr_k) == df_v[3]:
+                        new_prob = corr_v[3]["probability"]
+                        if isinstance(new_prob, str):
+                            self.not_df[df_k][4] = float(new_prob[:-1])
+                            self.not_df[df_k][5] = True
+                        else:
+                            self.not_df[df_k][4] = new_prob
+                            self.not_df[df_k][5] = False
+            delete_from_dict = []
+            for df_k, df_v in self.not_df.items():
+                if df_v[2]==False and df_v[5]==False:
+                    new_prob = self.not_df[df_k][1] * self.not_df[df_k][4]
+                    delete_from_dict.append(df_k)
+                    if new_prob == 0.0:
+                        df_to_delete.append(df_k)
+                    elif new_prob == 1.0:
+                        df_to_update.append([df_k, df_v, new_prob])
+                    else:
+                        raise "Safeguarding new probability calculation (impossible in resolved_ambiguity)"
+                else:
+                    new_prob = str(self.not_df[df_k][1] * self.not_df[df_k][4]) + "?"
+                    df_to_update.append([df_k, df_v, new_prob])
+            for df_k in delete_from_dict:
+                del self.not_df[df_k]
+
+            to_delete = []
+            if len(corrs_to_delete) > 0:
+                to_delete.extend(corrs_to_delete)
+            if len(df_to_delete) > 0:
+                to_delete.extend(df_to_delete)
+            if len(to_delete) > 0:
+                self.delete_empty(to_delete)
+
+            if len(df_to_update) > 0:
+                self.update_ambiguous(df_to_update)
+
+
         if custom_attributes:
             for k, v in custom_attributes.items():
                 self.custom_attributes[k] = v
-        ##### RESOLVED AMBIGUITY
         # ------------> 15: INFER DF RELATIONSHIPS(G) <---------------- #
-        ########################################################### ADD SOMETHING TO ADD NEW DF WHEN AMBIGUITY RESOLVED
-        new_df = self.create_df(event_name, event_attributes, event_specific_rule, current_event_id)
-        if new_df:
-            for to_remove in new_df:
-                rem = int(to_remove.element_id.split(":")[-1])
-                if rem in self.not_df:
-                    self.not_df.remove(rem)
-        if resolved_ambiguity:
-            print("RESOLVED:::::::", resolved_ambiguity)
+        ###########################################################
+        new_dfs = self.create_df(event_name, event_attributes, event_specific_rule, current_event_id)
+        if new_dfs:
+            for new_df in new_dfs:
+                rs_df, rs_rxx_id, rs_rxx_prob_float, rs_rxx_has_qm, rs_ryy_id, rs_ryy_prob_float, rs_ryy_has_qm = new_df
+                if rs_rxx_has_qm or rs_ryy_has_qm:
+                    rs_df_id = int(rs_df.element_id.split(":")[-1])
+                    self.not_df[rs_df_id] = [rs_rxx_id, rs_rxx_prob_float, rs_rxx_has_qm, rs_ryy_id, rs_ryy_prob_float, rs_ryy_has_qm]
         # ------------> custom attributes <---------------- #
         print("Custom attr.", self.custom_attributes)
         # ------------> 16: most recent event ← E <---------------- #
@@ -81,15 +146,22 @@ class BaseEKG:
         print("All events order", self.all_events_order)
         print("All events", self.all_events)
         self.stalling_events.append(event)
-        for e in self.stalling_events:
+        for e in self.stalling_events[:]:
             if not isinstance(e, str):
                 self.stalling_events.remove(e)
                 print("SENDING:            ", e)
             else:
-                break
+                found_one = False
+                for amb_corr_check_k, amb_corr_check_v in self.ambiguous_corr.items():
+                    extracted_id = e.split("_")[-1]
+                    if extracted_id == amb_corr_check_v[1]:
+                        found_one = True
+                if found_one:
+                    break
+                else:
+                    self.stalling_events.remove(e)
         print("Stalling events", self.stalling_events)
         # ------------> 18: not directly followed ← GET NOT DF(G) <---------------- #
-        self.not_df.append(current_event_id)
         print("Not df", self.not_df)
         # ------------> 19: ambiguous correlations ← GET AMB CORR(G) <---------------- #
         print("Amb corr", self.ambiguous_corr)
@@ -105,9 +177,13 @@ class BaseEKG:
             ambiguity_custom_attr = session.execute_write(self._create_prob_corrs, event_name, event_attributes, event_specific_rule, current_event_id, custom_attributes, ambiguous_corr, all_events)
             return ambiguity_custom_attr
 
-    def delete_empty_corrs(self, to_delete):
+    def delete_empty(self, to_delete):
         with self.driver.session() as session:
-            session.execute_write(self._delete_empty_corrs, to_delete)
+            session.execute_write(self._delete_empty, to_delete)
+
+    def update_ambiguous(self, to_update):
+        with self.driver.session() as session:
+            session.execute_write(self._update_ambiguous, to_update)
 
     def create_df(self, event_name, event_attributes, event_specific_rule, current_event_id):
         with self.driver.session() as session:
@@ -168,7 +244,7 @@ class BaseEKG:
             return result
 
     @staticmethod
-    def _delete_empty_corrs(tx, to_delete):
+    def _delete_empty(tx, to_delete):
         cypher_query = f"""MATCH ()-[r]->()
                                     WHERE id(r) IN $delete_ids
                                     DELETE r"""
@@ -176,41 +252,146 @@ class BaseEKG:
         tx.run(cypher_query, **params)
 
     @staticmethod
+    def _update_ambiguous(tx, to_update):
+        update_keys = [x[0] for x in to_update]
+        update_probs = [x[2] for x in to_update]
+
+        cypher_query = f"""UNWIND $updates AS update
+                                        MATCH ()-[r]->()
+                                        WHERE id(r) = update.id
+                                        SET r.probability = update.probability"""
+        params = {"updates": [{"id": key, "probability": prob} for key, prob in zip(update_keys, update_probs)]    }
+        tx.run(cypher_query, **params)
+
+
+    @staticmethod
     def _create_directly_follows(tx, event_name, event_attributes, event_specific_rule, current_event_id):
-        cypher_query = """
-        // Step 1: Identify the new event by id.
-        MATCH (new:Event)
-        WHERE id(new) = $current_event_id
-        WITH new
+        if event_specific_rule == "NEED DF":
+            cypher_query = """
+                // Step 1: Identify the new event by id.
+                MATCH (new:Event)
+                WHERE id(new) = $current_event_id
+                WITH new
 
-        // Step 2: Find all events with timestamps before the new event.
-        MATCH (event:Event)
-        WHERE event.timestamp < new.timestamp
-        WITH new, collect(event) AS prior_events
+                // Step 2: Find all events with timestamps before the new event.
+                MATCH (event:Event)
+                WHERE event.timestamp < new.timestamp
+                WITH new, collect(event) AS prior_events
 
-        // Step 3: Find all entities that the new event is CORR to
-        MATCH (new)<-[rxx:CORR]-(entity)
-        WHERE toFloat(rxx.probability) = 1.0
-        WITH new, prior_events, collect(entity) AS correlated_entities
+                // Step 3: Find all entities that the new event is CORR to // WHERE toFloat(rxx.probability) = 1.0
+                MATCH (new)<-[rxx:CORR]-(entity)
+                WITH new, prior_events, collect(entity) AS correlated_entities, collect(rxx) AS rxx_rels
 
-        // Step 4: Filter out events that are not CORR to the new-related entities and find the most recent event for each entity.
-        UNWIND correlated_entities AS entity
-        MATCH (entity)-[:CORR]->(event)
-        WHERE event IN prior_events
-        WITH new, entity, event
-        ORDER BY event.timestamp DESC
-        WITH new, entity, collect(event)[0] AS most_recent_event
-        WHERE most_recent_event IS NOT NULL
-        WITH new, collect({entity: entity, event: most_recent_event}) AS entity_event_pairs
+                // Step 4: Filter out events that are not CORR to the new-related entities and find the most recent event for each entity.
+                UNWIND correlated_entities AS entity
+                UNWIND rxx_rels AS rxx
+                WITH new, prior_events, entity, rxx
+                MATCH (entity)-[ryy:CORR]->(event)
+                WHERE event IN prior_events and entity = startNode(rxx)
+                WITH new, entity, event, rxx, ryy,
+                    toFloat(replace(toString(rxx.probability), '?', '')) AS rxx_prob_float,
+                        CASE WHEN toString(rxx.probability) ENDS WITH '?' THEN true ELSE false END AS rxx_has_qm,
+                    toFloat(replace(toString(ryy.probability), '?', '')) AS ryy_prob_float,
+                        CASE WHEN toString(ryy.probability) ENDS WITH '?' THEN true ELSE false END AS ryy_has_qm,
+                    rxx.specialization AS rxx_specialization, ryy.specialization AS ryy_specialization
+                ORDER BY event.timestamp DESC
+                WITH new, entity, collect(event)[0] AS most_recent_event, id(rxx) AS rxx_id, rxx_prob_float, rxx_has_qm, id(ryy) AS ryy_id, ryy_prob_float, ryy_has_qm, rxx_specialization, ryy_specialization
+                WHERE most_recent_event IS NOT NULL and NOT id(entity) IN $not_in_ents
+                WITH new, collect({
+                        entity: entity,
+                        event: most_recent_event,
+                        rxx_id: rxx_id,
+                        rxx_prob_float: rxx_prob_float,
+                        rxx_has_qm: rxx_has_qm,
+                        ryy_id: ryy_id,
+                        ryy_prob_float: ryy_prob_float,
+                        ryy_has_qm: ryy_has_qm,
+                        rxx_specialization: rxx_specialization,
+                        ryy_specialization: ryy_specialization
+                    }) AS entity_event_pairs
 
-        // Step 5: Create a DF relationship between the most recent event and the new event, with custom attributes detailing the CORR relationship.
-        UNWIND entity_event_pairs AS entity_event_pair
-        WITH new, entity_event_pair.entity AS entity, entity_event_pair.event AS mre
-        MERGE (mre)-[df:DF {type: entity.name}]->(new)
+                // Step 5: Create a DF relationship between the most recent event and the new event, with custom attributes detailing the CORR relationship.
+                UNWIND entity_event_pairs AS entity_event_pair
+                WITH new,
+                    entity_event_pair.entity AS entity,
+                    entity_event_pair.event AS mre,
+                    entity_event_pair.rxx_id AS rxx_id,
+                    entity_event_pair.rxx_prob_float AS rxx_prob_float,
+                    entity_event_pair.rxx_has_qm AS rxx_has_qm,
+                    entity_event_pair.ryy_id AS ryy_id,
+                    entity_event_pair.ryy_prob_float AS ryy_prob_float,
+                    entity_event_pair.ryy_has_qm AS ryy_has_qm,
+                    entity_event_pair.rxx_specialization AS rxx_specialization,
+                    entity_event_pair.ryy_specialization AS ryy_specialization
+                WITH new, entity, mre, rxx_id, rxx_prob_float, rxx_has_qm, ryy_id, ryy_prob_float, ryy_has_qm, rxx_specialization, ryy_specialization,
+                    CASE WHEN rxx_has_qm OR ryy_has_qm THEN toString(rxx_prob_float * ryy_prob_float) + '?' ELSE toString(rxx_prob_float * ryy_prob_float) END AS final_prob
+                MERGE (mre)-[df:DF {type: entity.name, specialization: rxx_specialization + "-" + ryy_specialization, probability: final_prob}]->(new)
+                RETURN df, rxx_id, rxx_prob_float, rxx_has_qm, ryy_id, ryy_prob_float, ryy_has_qm
+            """
+            result = tx.run(cypher_query, current_event_id=current_event_id, not_in_ents = event_attributes)
+        else:
+            cypher_query = """
+                // Step 1: Identify the new event by id.
+                MATCH (new:Event)
+                WHERE id(new) = $current_event_id
+                WITH new
 
-        RETURN mre
-        """
-        result = tx.run(cypher_query, current_event_id=current_event_id)
-        res = [record.values()[0] for record in result]
+                // Step 2: Find all events with timestamps before the new event.
+                MATCH (event:Event)
+                WHERE event.timestamp < new.timestamp
+                WITH new, collect(event) AS prior_events
+
+                // Step 3: Find all entities that the new event is CORR to // WHERE toFloat(rxx.probability) = 1.0
+                MATCH (new)<-[rxx:CORR]-(entity)
+                WITH new, prior_events, collect(entity) AS correlated_entities, collect(rxx) AS rxx_rels
+
+                // Step 4: Filter out events that are not CORR to the new-related entities and find the most recent event for each entity.
+                UNWIND correlated_entities AS entity
+                UNWIND rxx_rels AS rxx
+                WITH new, prior_events, entity, rxx
+                MATCH (entity)-[ryy:CORR]->(event)
+                WHERE event IN prior_events and entity = startNode(rxx)
+                WITH new, entity, event, rxx, ryy,
+                    toFloat(replace(toString(rxx.probability), '?', '')) AS rxx_prob_float,
+                        CASE WHEN toString(rxx.probability) ENDS WITH '?' THEN true ELSE false END AS rxx_has_qm,
+                    toFloat(replace(toString(ryy.probability), '?', '')) AS ryy_prob_float,
+                        CASE WHEN toString(ryy.probability) ENDS WITH '?' THEN true ELSE false END AS ryy_has_qm,
+                    rxx.specialization AS rxx_specialization, ryy.specialization AS ryy_specialization
+                ORDER BY event.timestamp DESC
+                WITH new, entity, collect(event)[0] AS most_recent_event, id(rxx) AS rxx_id, rxx_prob_float, rxx_has_qm, id(ryy) AS ryy_id, ryy_prob_float, ryy_has_qm, rxx_specialization, ryy_specialization
+                WHERE most_recent_event IS NOT NULL
+                WITH new, collect({
+                        entity: entity,
+                        event: most_recent_event,
+                        rxx_id: rxx_id,
+                        rxx_prob_float: rxx_prob_float,
+                        rxx_has_qm: rxx_has_qm,
+                        ryy_id: ryy_id,
+                        ryy_prob_float: ryy_prob_float,
+                        ryy_has_qm: ryy_has_qm,
+                        rxx_specialization: rxx_specialization,
+                        ryy_specialization: ryy_specialization
+                    }) AS entity_event_pairs
+
+                // Step 5: Create a DF relationship between the most recent event and the new event, with custom attributes detailing the CORR relationship.
+                UNWIND entity_event_pairs AS entity_event_pair
+                WITH new,
+                    entity_event_pair.entity AS entity,
+                    entity_event_pair.event AS mre,
+                    entity_event_pair.rxx_id AS rxx_id,
+                    entity_event_pair.rxx_prob_float AS rxx_prob_float,
+                    entity_event_pair.rxx_has_qm AS rxx_has_qm,
+                    entity_event_pair.ryy_id AS ryy_id,
+                    entity_event_pair.ryy_prob_float AS ryy_prob_float,
+                    entity_event_pair.ryy_has_qm AS ryy_has_qm,
+                    entity_event_pair.rxx_specialization AS rxx_specialization,
+                    entity_event_pair.ryy_specialization AS ryy_specialization
+                WITH new, entity, mre, rxx_id, rxx_prob_float, rxx_has_qm, ryy_id, ryy_prob_float, ryy_has_qm, rxx_specialization, ryy_specialization,
+                    CASE WHEN rxx_has_qm OR ryy_has_qm THEN toString(rxx_prob_float * ryy_prob_float) + '?' ELSE toString(rxx_prob_float * ryy_prob_float) END AS final_prob
+                MERGE (mre)-[df:DF {type: entity.name, specialization: rxx_specialization + "-" + ryy_specialization, probability: final_prob}]->(new)
+                RETURN df, rxx_id, rxx_prob_float, rxx_has_qm, ryy_id, ryy_prob_float, ryy_has_qm
+            """
+            result = tx.run(cypher_query, current_event_id=current_event_id)
+        res = [record.values() for record in result]
         if res:
             return res

@@ -47,6 +47,7 @@ class RulesEKG():
         elif mode == "integration":
             return_attributes = {}
             keep_corrs = []
+            new_added_need_df = []
             tx, event_name, event_attributes, current_event_id = key
             # q1
             cypher_query = f"""MATCH (d:Entity {{type: 'donor'}})-[:CORR]->(e:Event)
@@ -99,6 +100,7 @@ class RulesEKG():
                                 RETURN corr_1, corr_2"""
                 params["donor_id"] = current_donor
                 params["current_event_id"] = int(newly_creat_corr)
+                new_added_need_df.append(int(newly_creat_corr))
                 result = tx.run(cypher_query, **params)
                 new_corrs = [record.values() for record in result]
                 for new_correlation in new_corrs[0]:
@@ -129,25 +131,25 @@ class RulesEKG():
                 else:
                     raise "Safeguarding non-existent event for existent hcw (should be impossible)"
                 active_donors = return_attributes["active_donors"]
-                for i, donor_id in enumerate(active_donors):
-                    params = {}
-                    cypher_query = f"""MATCH (donor:Entity), (event:Event)
+                params = {}
+                cypher_query = f"""MATCH (donor:Entity), (event:Event)
                                                 WHERE id(donor) = $donor_id AND id(event) = $event_id
                                                 CREATE (donor)-[corr_1:CORR {{specialization: 'HAS_DONOR', probability: {1.0}}}]->(event)
                                                 RETURN corr_1"""
-                    params["donor_id"] = donor_id
-                    params["event_id"] = event_id
-                    result = tx.run(cypher_query, **params)
-                    new_corrs = [record.values() for record in result]
-                    for new_correlation in new_corrs[0]:
-                        new_element_id = new_correlation.element_id.split(":")[-1]
-                        new_element_start = new_correlation.start_node.element_id.split(":")[-1]
-                        new_element_end = new_correlation.end_node.element_id.split(":")[-1]
-                        new_element_type = new_correlation.type
-                        new_element_properties = new_correlation._properties
-                        keep_corrs.append([new_element_id,
-                                                            new_element_start, new_element_end,
-                                                            new_element_type, new_element_properties])
+                params["donor_id"] = current_donor
+                params["event_id"] = event_id
+                new_added_need_df.append(event_id)
+                result = tx.run(cypher_query, **params)
+                new_corrs = [record.values() for record in result]
+                for new_correlation in new_corrs[0]:
+                    new_element_id = new_correlation.element_id.split(":")[-1]
+                    new_element_start = new_correlation.start_node.element_id.split(":")[-1]
+                    new_element_end = new_correlation.end_node.element_id.split(":")[-1]
+                    new_element_type = new_correlation.type
+                    new_element_properties = new_correlation._properties
+                    keep_corrs.append([new_element_id,
+                                                    new_element_start, new_element_end,
+                                                    new_element_type, new_element_properties])
             # q3
             if "donor_station_mapping" in custom_attributes.keys():
                 previous_mapping = custom_attributes["donor_station_mapping"]
@@ -156,10 +158,15 @@ class RulesEKG():
             else:
                 return_attributes["donor_station_mapping"] = {current_donor: event_attributes["station"]}
 
+            new_added_need_df = list(set(new_added_need_df))
+            new_added_need_df_attr = return_attributes["active_donors"].copy()
+            new_added_need_df_attr.remove(current_donor)
+            new_added_need_df.insert(0, new_added_need_df_attr)
+            new_added_need_df.insert(0, "NEED DF")
             if len(keep_corrs) > 1:
-                return keep_corrs, return_attributes, False
+                return keep_corrs, return_attributes, new_added_need_df
             else:
-                return False, return_attributes, False
+                return False, return_attributes, new_added_need_df
 
     # DONE
     def rule_hcw_checkin(self, mode, key, custom_attributes=None, ambiguous_corr=None, all_events=None):
@@ -247,14 +254,7 @@ class RulesEKG():
 
         elif mode == "integration":
             tx, event_name, event_attributes, current_event_id = key
-            # q0
             return_attributes = {}
-            if "open_hh" in custom_attributes.keys():
-                previous_open_hhs = custom_attributes["open_hh"]
-                new_open_hhs = list(set(previous_open_hhs + [current_event_id]))
-                return_attributes["open_hh"] = new_open_hhs
-            else:
-                return_attributes["open_hh"] = [current_event_id]
             # q1
             if "active_donors" in custom_attributes.keys():
                 active_donors = custom_attributes["active_donors"]
