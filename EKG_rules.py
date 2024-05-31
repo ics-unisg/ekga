@@ -21,6 +21,7 @@ class RulesEKG():
             "Donor check-out": self.rule_donor_checkout,
             "Take out samples": self.rule_take_out_samples,
             "HCW check-out": self.rule_hcw_checkout,
+            "stalled_printing_support": self.stalled_printing_support
         }
 
     def get_rule(self, event_name):
@@ -28,6 +29,32 @@ class RulesEKG():
             return self.rules[event_name]
         else:
             return False
+
+    def stalled_printing_support(self, e, all_events, custom_attributes, support):
+        if e[1] == "Hand hygiene" and len(custom_attributes["active_donors"]) > 0:
+            retrieved_id = None
+            for k, v in all_events.items():
+                if v == e:
+                    retrieved_id = k
+            if not retrieved_id:
+                raise "Safeguarding wrong lookup in stalled printing support"
+            retrieved_attr = support[retrieved_id]
+
+            final = False
+            print(retrieved_attr)
+            for attr in retrieved_attr:
+                if attr[3]["probability"] == 1.0 and attr[3]["specialization"] == 'HAS_OBJECT':
+                    if not final:
+                        final = int(attr[0])
+                    else:
+                        raise "Stalled printing support: Cannot have multiple Objects with 1.0 probability in disambiguated graph"
+            if final:
+                e[3]["station"] = custom_attributes["donor_station_mapping"][final]
+                return e
+            else:
+                raise "Stalled printing support failed"
+        else:
+            return e # "Only HH stalled printing support implemented"
 
 
     # DONE
@@ -1034,7 +1061,7 @@ class RulesEKG():
                     if int(v[1]) in all_events.keys():
                         if all_events[int(v[1])][1] == "Hand hygiene":
                             params = {}
-                            if v[0] == this_donor:
+                            if int(v[0]) == this_donor:
                                 params["new_probability"] = 0.0
                                 v[3]["probability"] = 0.0
                             else:
