@@ -1,0 +1,37 @@
+name, patient
+Donor check-in, Patient Left
+HCW check-in, Patient Left
+Perform Hand hygiene, Patient Left
+Check blood drawing machine, Patient Left
+Apply tourniquet, Patient Left
+Perform Hand hygiene, Patient Left
+Disinfect injection site, Patient Left
+Insert needle, Patient Left
+Remove tourniquet, Patient Left
+Start blood drawing machine, Patient Left
+Monitor patient, Patient Left
+Stop blood drawing machine, Patient Left
+Remove needle, Patient Left
+Perform Hand hygiene, Patient Left
+Donor check-out, Patient Left
+Take out samples, Patient Left
+Perform Hand hygiene, Patient Left
+HCW check-out, Patient Left
+Donor check-in, Patient Right
+HCW check-in, Patient Right
+Perform Hand hygiene, Patient Right
+Check blood drawing machine, Patient Right
+Apply tourniquet, Patient Right
+Perform Hand hygiene, Patient Right
+Disinfect injection site, Patient Right
+Insert needle, Patient Right
+Remove tourniquet, Patient Right
+Start blood drawing machine, Patient Right
+Monitor patient, Patient Right
+Stop blood drawing machine, Patient Right
+Remove needle, Patient Right
+Perform Hand hygiene, Patient Right
+Donor check-out, Patient Right
+Take out samples, Patient Right
+Perform Hand hygiene, Patient Right
+HCW check-out, Patient Right

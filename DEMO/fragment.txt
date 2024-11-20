@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<log xmlns="http://www.xes-standard.org/" xes.version="2.0" xes.features="nested-attributes">
+	<string key="creator" value="cpee.org"/>
+	<extension name="Time" prefix="time" uri="http://www.xes-standard.org/time.xesext"/>
+	<extension name="Concept" prefix="concept" uri="http://www.xes-standard.org/concept.xesext"/>
+	<extension name="ID" prefix="id" uri="http://www.xes-standard.org/identity.xesext"/>
+	<extension name="Lifecycle" prefix="lifecycle" uri="http://www.xes-standard.org/lifecycle.xesext"/>
+	<extension name="CPEE" prefix="cpee" uri="http://cpee.org/cpee.xesext"/>
+	<extension name="stream" prefix="stream" uri="https://cpee.org/datastream/datastream.xesext"/>
+	<global scope="trace">
+		<string key="concept:name" value="__NOTSPECIFIED__"/>
+	</global>
+	<trace>
+		<string key="concept:name" value="s1s1" />
+		<list key="stream:datacontext">
+			<list key="stream:datastream">
+				<list key="stream:point">
+					<string key="stream:id" value="Donor check-in"/>
+					<string key="stream:source" value="Left"/>
+					<string key="stream:value" value="Start"/>
+					<date key="stream:timestamp" value="2021-11-04T15:22:19.367+01:00"/>
+				</list>
+				<list key="stream:point">
+					<string key="stream:id" value="Donor check-in"/>
+					<string key="stream:source" value="Left"/>
+					<string key="stream:value" value="End"/>
+					<date key="stream:timestamp" value="2021-11-04T16:22:19.367+01:00"/>
+				</list>
+				<list key="stream:point">
+					<string key="stream:id" value="HCW check-in"/>
+					<string key="stream:source" value="Middle"/>
+					<string key="stream:value" value="Start"/>
+					<date key="stream:timestamp" value="2021-11-04T15:22:19.367+01:00"/>
+				</list>
+				<list key="stream:point">
+					<string key="stream:id" value="HCW check-in"/>
+					<string key="stream:source" value="Middle"/>
+					<string key="stream:value" value="End"/>
+					<date key="stream:timestamp" value="2021-11-04T16:22:19.367+01:00"/>
+				</list>
+			</list>
+		</list>
+	</trace>
+	<trace>
+		<string key="concept:name" value="s1s2" />
+		<list key="stream:datacontext">
+			<list key="stream:datastream">
+				<list key="stream:point">
+					<string key="stream:id" value="Donor check-in"/>
+					<string key="stream:source" value="Left"/>
+					<string key="stream:value" value="Start"/>
+					<date key="stream:timestamp" value="2021-11-05T15:22:19.367+01:00"/>
+				</list>
+				<list key="stream:point">
+					<string key="stream:id" value="Donor check-in"/>
+					<string key="stream:source" value="Left"/>
+					<string key="stream:value" value="End"/>
+					<date key="stream:timestamp" value="2021-11-05T16:22:19.367+01:00"/>
+				</list>
+			</list>
+		</list>
+	</trace>
+	...

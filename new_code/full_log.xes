@@ -1,0 +1,3829 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<log xmlns="http://www.xes-standard.org/" xes.version="2.0" xes.features="nested-attributes">
+    ...
+    <trace>
+        <event>
+            <string key="concept:name" value="Donor check-in"/>
+            <date key="time:timestamp" value="2024-09-11T15:56:16.011+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-in"/>
+            <date key="time:timestamp" value="2024-09-11T15:56:24.279+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-11T15:56:33.320+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Check blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-11T15:56:55.794+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Apply tourniquet"/>
+            <date key="time:timestamp" value="2024-09-11T15:57:13.752+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene and wear gloves"/>
+            <date key="time:timestamp" value="2024-09-11T15:58:22.076+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disinfect injection site"/>
+            <date key="time:timestamp" value="2024-09-11T15:58:47.402+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Insert needle"/>
+            <date key="time:timestamp" value="2024-09-11T15:59:08.026+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove tourniquet"/>
+            <date key="time:timestamp" value="2024-09-11T15:59:17.085+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Start blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-11T15:59:26.343+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Monitor patient"/>
+            <date key="time:timestamp" value="2024-09-11T15:59:37.781+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Stop blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-11T15:59:46.788+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove needle"/>
+            <date key="time:timestamp" value="2024-09-11T16:00:01.199+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove gloves and hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-11T16:00:37.774+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-out"/>
+            <date key="time:timestamp" value="2024-09-11T16:00:42.692+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Take out samples"/>
+            <date key="time:timestamp" value="2024-09-11T16:00:52.772+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-11T16:01:15.388+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-out"/>
+            <date key="time:timestamp" value="2024-09-11T16:01:24.354+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-in"/>
+            <date key="time:timestamp" value="2024-09-11T16:04:11.160+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-in"/>
+            <date key="time:timestamp" value="2024-09-11T16:04:16.824+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-11T16:04:29.333+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Check blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-11T16:04:38.805+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Apply tourniquet"/>
+            <date key="time:timestamp" value="2024-09-11T16:05:01.624+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene and wear gloves"/>
+            <date key="time:timestamp" value="2024-09-11T16:05:44.835+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disinfect injection site"/>
+            <date key="time:timestamp" value="2024-09-11T16:06:02.657+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Insert needle"/>
+            <date key="time:timestamp" value="2024-09-11T16:06:16.835+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove tourniquet"/>
+            <date key="time:timestamp" value="2024-09-11T16:06:29.160+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Start blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-11T16:06:33.990+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Monitor patient"/>
+            <date key="time:timestamp" value="2024-09-11T16:06:45.055+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Stop blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-11T16:06:51.835+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove needle"/>
+            <date key="time:timestamp" value="2024-09-11T16:07:08.757+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove gloves and hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-11T16:07:27.810+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-out"/>
+            <date key="time:timestamp" value="2024-09-11T16:07:29.905+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Take out samples"/>
+            <date key="time:timestamp" value="2024-09-11T16:07:43.785+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-11T16:07:52.216+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-out"/>
+            <date key="time:timestamp" value="2024-09-11T16:07:55.550+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-in"/>
+            <date key="time:timestamp" value="2024-09-11T16:09:48.444+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-in"/>
+            <date key="time:timestamp" value="2024-09-11T16:09:53.894+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-11T16:10:02.422+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Check blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-11T16:10:06.951+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Apply tourniquet"/>
+            <date key="time:timestamp" value="2024-09-11T16:10:16.517+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene and wear gloves"/>
+            <date key="time:timestamp" value="2024-09-11T16:10:25.184+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disinfect injection site"/>
+            <date key="time:timestamp" value="2024-09-11T16:10:38.068+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Insert needle"/>
+            <date key="time:timestamp" value="2024-09-11T16:10:51.549+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove tourniquet"/>
+            <date key="time:timestamp" value="2024-09-11T16:10:57.884+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Start blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-11T16:11:07.290+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Monitor patient"/>
+            <date key="time:timestamp" value="2024-09-11T16:11:19.675+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Stop blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-11T16:11:29.050+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove needle"/>
+            <date key="time:timestamp" value="2024-09-11T16:11:47.880+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove gloves and hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-11T16:12:01.282+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-out"/>
+            <date key="time:timestamp" value="2024-09-11T16:12:07.467+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Take out samples"/>
+            <date key="time:timestamp" value="2024-09-11T16:12:15.541+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-11T16:12:22.722+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-out"/>
+            <date key="time:timestamp" value="2024-09-11T16:12:31.567+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-in"/>
+            <date key="time:timestamp" value="2024-09-11T16:15:40.554+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-in"/>
+            <date key="time:timestamp" value="2024-09-11T16:15:48.765+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-11T16:16:02.604+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Check blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-11T16:16:11.249+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Apply tourniquet"/>
+            <date key="time:timestamp" value="2024-09-11T16:16:21.290+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene and wear gloves"/>
+            <date key="time:timestamp" value="2024-09-11T16:16:48.965+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disinfect injection site"/>
+            <date key="time:timestamp" value="2024-09-11T16:17:05.177+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Insert needle"/>
+            <date key="time:timestamp" value="2024-09-11T16:17:15.834+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove tourniquet"/>
+            <date key="time:timestamp" value="2024-09-11T16:17:21.504+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Start blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-11T16:17:30.924+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Monitor patient"/>
+            <date key="time:timestamp" value="2024-09-11T16:17:44.476+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Stop blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-11T16:17:51.387+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove needle"/>
+            <date key="time:timestamp" value="2024-09-11T16:18:05.028+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove gloves and hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-11T16:18:25.708+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-out"/>
+            <date key="time:timestamp" value="2024-09-11T16:18:28.163+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Take out samples"/>
+            <date key="time:timestamp" value="2024-09-11T16:18:38.738+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-11T16:18:51.134+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-out"/>
+            <date key="time:timestamp" value="2024-09-11T16:18:58.137+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-in"/>
+            <date key="time:timestamp" value="2024-09-11T16:21:17.135+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-in"/>
+            <date key="time:timestamp" value="2024-09-11T16:21:28.802+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-11T16:21:43.090+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Check blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-11T16:21:50.781+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Apply tourniquet"/>
+            <date key="time:timestamp" value="2024-09-11T16:22:01.938+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene and wear gloves"/>
+            <date key="time:timestamp" value="2024-09-11T16:22:23.797+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disinfect injection site"/>
+            <date key="time:timestamp" value="2024-09-11T16:22:47.324+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Insert needle"/>
+            <date key="time:timestamp" value="2024-09-11T16:23:07.566+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove tourniquet"/>
+            <date key="time:timestamp" value="2024-09-11T16:23:17.412+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Start blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-11T16:23:28.451+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Monitor patient"/>
+            <date key="time:timestamp" value="2024-09-11T16:23:48.195+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Stop blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-11T16:23:57.063+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove needle"/>
+            <date key="time:timestamp" value="2024-09-11T16:24:14.443+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove gloves and hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-11T16:24:35.923+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-out"/>
+            <date key="time:timestamp" value="2024-09-11T16:24:43.215+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Take out samples"/>
+            <date key="time:timestamp" value="2024-09-11T16:24:56.392+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-11T16:25:06.727+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-out"/>
+            <date key="time:timestamp" value="2024-09-11T16:25:14.799+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-in"/>
+            <date key="time:timestamp" value="2024-09-11T16:27:06.671+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-in"/>
+            <date key="time:timestamp" value="2024-09-11T16:27:10.878+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-11T16:27:28.043+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Check blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-11T16:27:33.350+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Apply tourniquet"/>
+            <date key="time:timestamp" value="2024-09-11T16:27:38.955+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene and wear gloves"/>
+            <date key="time:timestamp" value="2024-09-11T16:28:23.301+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disinfect injection site"/>
+            <date key="time:timestamp" value="2024-09-11T16:28:36.153+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Insert needle"/>
+            <date key="time:timestamp" value="2024-09-11T16:28:46.642+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove tourniquet"/>
+            <date key="time:timestamp" value="2024-09-11T16:28:54.846+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Start blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-11T16:29:02.255+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Monitor patient"/>
+            <date key="time:timestamp" value="2024-09-11T16:29:12.103+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Stop blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-11T16:29:17.150+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove needle"/>
+            <date key="time:timestamp" value="2024-09-11T16:29:30.101+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove gloves and hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-11T16:29:48.176+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-out"/>
+            <date key="time:timestamp" value="2024-09-11T16:29:54.186+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Take out samples"/>
+            <date key="time:timestamp" value="2024-09-11T16:30:04.837+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-11T16:30:16.148+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-out"/>
+            <date key="time:timestamp" value="2024-09-11T16:30:21.008+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-in"/>
+            <date key="time:timestamp" value="2024-09-11T16:32:22.983+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-in"/>
+            <date key="time:timestamp" value="2024-09-11T16:32:32.675+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-11T16:32:46.000+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Check blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-11T16:32:54.571+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Apply tourniquet"/>
+            <date key="time:timestamp" value="2024-09-11T16:33:09.393+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene and wear gloves"/>
+            <date key="time:timestamp" value="2024-09-11T16:33:50.549+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disinfect injection site"/>
+            <date key="time:timestamp" value="2024-09-11T16:34:06.665+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Insert needle"/>
+            <date key="time:timestamp" value="2024-09-11T16:34:20.239+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove tourniquet"/>
+            <date key="time:timestamp" value="2024-09-11T16:34:27.284+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Start blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-11T16:34:34.033+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Monitor patient"/>
+            <date key="time:timestamp" value="2024-09-11T16:34:42.059+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Stop blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-11T16:34:49.373+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove needle"/>
+            <date key="time:timestamp" value="2024-09-11T16:34:59.881+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove gloves and hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-11T16:35:23.118+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-out"/>
+            <date key="time:timestamp" value="2024-09-11T16:35:26.907+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Take out samples"/>
+            <date key="time:timestamp" value="2024-09-11T16:35:36.723+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-11T16:35:44.487+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-out"/>
+            <date key="time:timestamp" value="2024-09-11T16:35:50.530+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-in"/>
+            <date key="time:timestamp" value="2024-09-11T16:38:11.496+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-in"/>
+            <date key="time:timestamp" value="2024-09-11T16:38:21.279+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-11T16:38:39.315+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Check blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-11T16:38:47.196+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Apply tourniquet"/>
+            <date key="time:timestamp" value="2024-09-11T16:38:57.085+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene and wear gloves"/>
+            <date key="time:timestamp" value="2024-09-11T16:39:41.190+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disinfect injection site"/>
+            <date key="time:timestamp" value="2024-09-11T16:40:04.947+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Insert needle"/>
+            <date key="time:timestamp" value="2024-09-11T16:40:20.442+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove tourniquet"/>
+            <date key="time:timestamp" value="2024-09-11T16:40:28.703+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Start blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-11T16:40:36.160+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Monitor patient"/>
+            <date key="time:timestamp" value="2024-09-11T16:40:47.407+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Stop blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-11T16:40:58.182+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove needle"/>
+            <date key="time:timestamp" value="2024-09-11T16:41:14.657+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove gloves and hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-11T16:41:37.104+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-out"/>
+            <date key="time:timestamp" value="2024-09-11T16:41:41.732+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Take out samples"/>
+            <date key="time:timestamp" value="2024-09-11T16:41:56.364+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-11T16:42:11.850+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-out"/>
+            <date key="time:timestamp" value="2024-09-11T16:42:16.739+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-in"/>
+            <date key="time:timestamp" value="2024-09-12T10:51:25.428+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-in"/>
+            <date key="time:timestamp" value="2024-09-12T10:51:34.302+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T10:51:52.757+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Check blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T10:51:57.974+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Apply tourniquet"/>
+            <date key="time:timestamp" value="2024-09-12T10:52:08.956+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene and wear gloves"/>
+            <date key="time:timestamp" value="2024-09-12T10:52:58.850+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disinfect injection site"/>
+            <date key="time:timestamp" value="2024-09-12T10:53:14.595+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Insert needle"/>
+            <date key="time:timestamp" value="2024-09-12T10:53:27.450+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove tourniquet"/>
+            <date key="time:timestamp" value="2024-09-12T10:53:39.105+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Start blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T10:53:42.865+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Monitor patient"/>
+            <date key="time:timestamp" value="2024-09-12T10:53:57.391+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Stop blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T10:54:04.314+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove needle"/>
+            <date key="time:timestamp" value="2024-09-12T10:54:26.274+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove gloves and hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T10:54:55.637+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-out"/>
+            <date key="time:timestamp" value="2024-09-12T10:54:58.735+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Take out samples"/>
+            <date key="time:timestamp" value="2024-09-12T10:55:12.576+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T10:55:37.393+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-out"/>
+            <date key="time:timestamp" value="2024-09-12T10:55:40.724+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-in"/>
+            <date key="time:timestamp" value="2024-09-12T10:57:46.729+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-in"/>
+            <date key="time:timestamp" value="2024-09-12T10:57:55.782+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T10:58:11.312+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Check blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T10:58:15.201+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Apply tourniquet"/>
+            <date key="time:timestamp" value="2024-09-12T10:58:23.070+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene and wear gloves"/>
+            <date key="time:timestamp" value="2024-09-12T10:59:05.416+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disinfect injection site"/>
+            <date key="time:timestamp" value="2024-09-12T10:59:18.416+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Insert needle"/>
+            <date key="time:timestamp" value="2024-09-12T10:59:29.117+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove tourniquet"/>
+            <date key="time:timestamp" value="2024-09-12T10:59:33.364+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Start blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T10:59:40.422+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Monitor patient"/>
+            <date key="time:timestamp" value="2024-09-12T10:59:49.976+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Stop blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T10:59:54.971+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove needle"/>
+            <date key="time:timestamp" value="2024-09-12T11:00:11.106+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove gloves and hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T11:00:37.548+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-out"/>
+            <date key="time:timestamp" value="2024-09-12T11:00:41.080+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Take out samples"/>
+            <date key="time:timestamp" value="2024-09-12T11:00:52.670+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T11:01:06.044+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-out"/>
+            <date key="time:timestamp" value="2024-09-12T11:01:10.026+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-in"/>
+            <date key="time:timestamp" value="2024-09-12T11:03:18.774+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-in"/>
+            <date key="time:timestamp" value="2024-09-12T11:03:26.567+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T11:03:39.834+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Check blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T11:03:45.771+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Apply tourniquet"/>
+            <date key="time:timestamp" value="2024-09-12T11:03:54.902+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene and wear gloves"/>
+            <date key="time:timestamp" value="2024-09-12T11:04:37.406+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disinfect injection site"/>
+            <date key="time:timestamp" value="2024-09-12T11:04:51.568+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Insert needle"/>
+            <date key="time:timestamp" value="2024-09-12T11:05:06.143+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove tourniquet"/>
+            <date key="time:timestamp" value="2024-09-12T11:05:12.675+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Start blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T11:05:22.138+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Monitor patient"/>
+            <date key="time:timestamp" value="2024-09-12T11:05:29.522+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Stop blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T11:05:34.314+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove needle"/>
+            <date key="time:timestamp" value="2024-09-12T11:05:47.839+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove gloves and hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T11:06:09.200+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-out"/>
+            <date key="time:timestamp" value="2024-09-12T11:06:12.647+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Take out samples"/>
+            <date key="time:timestamp" value="2024-09-12T11:06:21.810+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T11:06:34.528+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-out"/>
+            <date key="time:timestamp" value="2024-09-12T11:06:38.082+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-in"/>
+            <date key="time:timestamp" value="2024-09-12T11:08:59.625+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-in"/>
+            <date key="time:timestamp" value="2024-09-12T11:09:04.682+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T11:09:13.917+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Check blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T11:09:16.360+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Apply tourniquet"/>
+            <date key="time:timestamp" value="2024-09-12T11:09:30.495+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene and wear gloves"/>
+            <date key="time:timestamp" value="2024-09-12T11:10:04.201+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disinfect injection site"/>
+            <date key="time:timestamp" value="2024-09-12T11:10:17.713+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Insert needle"/>
+            <date key="time:timestamp" value="2024-09-12T11:10:40.827+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove tourniquet"/>
+            <date key="time:timestamp" value="2024-09-12T11:10:49.653+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Start blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T11:10:54.420+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Monitor patient"/>
+            <date key="time:timestamp" value="2024-09-12T11:11:07.005+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Stop blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T11:11:12.846+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove needle"/>
+            <date key="time:timestamp" value="2024-09-12T11:11:36.562+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove gloves and hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T11:11:59.462+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-out"/>
+            <date key="time:timestamp" value="2024-09-12T11:12:02.555+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Take out samples"/>
+            <date key="time:timestamp" value="2024-09-12T11:12:21.620+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T11:12:31.413+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-out"/>
+            <date key="time:timestamp" value="2024-09-12T11:12:34.651+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-in"/>
+            <date key="time:timestamp" value="2024-09-12T11:14:29.933+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-in"/>
+            <date key="time:timestamp" value="2024-09-12T11:14:34.106+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T11:14:48.389+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Check blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T11:14:54.835+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Apply tourniquet"/>
+            <date key="time:timestamp" value="2024-09-12T11:15:05.252+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene and wear gloves"/>
+            <date key="time:timestamp" value="2024-09-12T11:15:23.068+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disinfect injection site"/>
+            <date key="time:timestamp" value="2024-09-12T11:15:36.951+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Insert needle"/>
+            <date key="time:timestamp" value="2024-09-12T11:15:50.371+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove tourniquet"/>
+            <date key="time:timestamp" value="2024-09-12T11:15:54.758+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Start blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T11:15:58.963+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Monitor patient"/>
+            <date key="time:timestamp" value="2024-09-12T11:16:12.615+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Stop blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T11:16:20.855+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove needle"/>
+            <date key="time:timestamp" value="2024-09-12T11:16:33.063+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove gloves and hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T11:16:51.161+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-out"/>
+            <date key="time:timestamp" value="2024-09-12T11:16:54.031+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Take out samples"/>
+            <date key="time:timestamp" value="2024-09-12T11:17:06.078+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T11:17:12.413+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-out"/>
+            <date key="time:timestamp" value="2024-09-12T11:17:16.330+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-in"/>
+            <date key="time:timestamp" value="2024-09-12T11:19:05.825+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-in"/>
+            <date key="time:timestamp" value="2024-09-12T11:19:12.230+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T11:19:33.946+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Check blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T11:19:45.312+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Apply tourniquet"/>
+            <date key="time:timestamp" value="2024-09-12T11:19:58.704+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene and wear gloves"/>
+            <date key="time:timestamp" value="2024-09-12T11:20:58.079+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disinfect injection site"/>
+            <date key="time:timestamp" value="2024-09-12T11:21:13.247+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Insert needle"/>
+            <date key="time:timestamp" value="2024-09-12T11:21:27.229+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove tourniquet"/>
+            <date key="time:timestamp" value="2024-09-12T11:21:35.002+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Start blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T11:21:41.450+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Monitor patient"/>
+            <date key="time:timestamp" value="2024-09-12T11:21:54.889+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Stop blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T11:22:01.631+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove needle"/>
+            <date key="time:timestamp" value="2024-09-12T11:22:20.860+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove gloves and hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T11:22:43.544+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-out"/>
+            <date key="time:timestamp" value="2024-09-12T11:22:47.326+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Take out samples"/>
+            <date key="time:timestamp" value="2024-09-12T11:22:58.541+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T11:23:16.775+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-out"/>
+            <date key="time:timestamp" value="2024-09-12T11:23:22.910+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-in"/>
+            <date key="time:timestamp" value="2024-09-12T11:24:56.641+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-in"/>
+            <date key="time:timestamp" value="2024-09-12T11:25:04.252+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T11:25:27.629+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Check blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T11:25:34.021+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Apply tourniquet"/>
+            <date key="time:timestamp" value="2024-09-12T11:25:45.724+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene and wear gloves"/>
+            <date key="time:timestamp" value="2024-09-12T11:26:33.699+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disinfect injection site"/>
+            <date key="time:timestamp" value="2024-09-12T11:26:43.023+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Insert needle"/>
+            <date key="time:timestamp" value="2024-09-12T11:27:00.102+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove tourniquet"/>
+            <date key="time:timestamp" value="2024-09-12T11:27:06.542+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Start blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T11:27:11.194+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Monitor patient"/>
+            <date key="time:timestamp" value="2024-09-12T11:27:22.639+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Stop blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T11:27:28.523+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove needle"/>
+            <date key="time:timestamp" value="2024-09-12T11:27:44.792+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove gloves and hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T11:28:17.282+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-out"/>
+            <date key="time:timestamp" value="2024-09-12T11:28:20.634+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Take out samples"/>
+            <date key="time:timestamp" value="2024-09-12T11:28:29.234+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T11:28:50.783+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-out"/>
+            <date key="time:timestamp" value="2024-09-12T11:28:55.020+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-in"/>
+            <date key="time:timestamp" value="2024-09-12T11:30:20.339+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-in"/>
+            <date key="time:timestamp" value="2024-09-12T11:30:22.352+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-in"/>
+            <date key="time:timestamp" value="2024-09-12T11:30:27.874+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T11:30:51.040+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Check blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T11:30:57.212+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Apply tourniquet"/>
+            <date key="time:timestamp" value="2024-09-12T11:31:07.910+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene and wear gloves"/>
+            <date key="time:timestamp" value="2024-09-12T11:31:40.616+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disinfect injection site"/>
+            <date key="time:timestamp" value="2024-09-12T11:32:03.157+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Insert needle"/>
+            <date key="time:timestamp" value="2024-09-12T11:32:20.096+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove tourniquet"/>
+            <date key="time:timestamp" value="2024-09-12T11:32:26.567+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Start blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T11:32:33.094+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Monitor patient"/>
+            <date key="time:timestamp" value="2024-09-12T11:32:44.426+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Stop blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T11:32:50.263+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove needle"/>
+            <date key="time:timestamp" value="2024-09-12T11:33:08.474+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove gloves and hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T11:33:25.508+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-out"/>
+            <date key="time:timestamp" value="2024-09-12T11:33:30.885+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Take out samples"/>
+            <date key="time:timestamp" value="2024-09-12T11:33:39.572+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T11:33:48.817+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-out"/>
+            <date key="time:timestamp" value="2024-09-12T11:33:55.415+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-in"/>
+            <date key="time:timestamp" value="2024-09-12T15:49:32.164+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-in"/>
+            <date key="time:timestamp" value="2024-09-12T15:49:38.379+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-in"/>
+            <date key="time:timestamp" value="2024-09-12T15:49:51.583+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T15:50:08.876+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Check blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T15:50:14.627+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Apply tourniquet"/>
+            <date key="time:timestamp" value="2024-09-12T15:50:25.943+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene and wear gloves"/>
+            <date key="time:timestamp" value="2024-09-12T15:50:46.489+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disinfect injection site"/>
+            <date key="time:timestamp" value="2024-09-12T15:50:58.754+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Insert needle"/>
+            <date key="time:timestamp" value="2024-09-12T15:51:14.275+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove tourniquet"/>
+            <date key="time:timestamp" value="2024-09-12T15:51:22.232+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Start blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T15:51:32.419+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove gloves, dispose of gloves, and hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T15:52:02.036+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Check blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T15:52:10.443+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Apply tourniquet"/>
+            <date key="time:timestamp" value="2024-09-12T15:52:19.118+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene and wear gloves"/>
+            <date key="time:timestamp" value="2024-09-12T15:52:39.061+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disinfect injection site"/>
+            <date key="time:timestamp" value="2024-09-12T15:52:47.829+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Insert needle"/>
+            <date key="time:timestamp" value="2024-09-12T15:52:56.710+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove tourniquet"/>
+            <date key="time:timestamp" value="2024-09-12T15:53:04.739+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Start blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T15:53:08.882+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Monitor patient"/>
+            <date key="time:timestamp" value="2024-09-12T15:53:20.621+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Stop blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T15:53:24.842+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove needle"/>
+            <date key="time:timestamp" value="2024-09-12T15:53:50.347+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove gloves, dispose of gloves, and hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T15:54:05.192+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-out"/>
+            <date key="time:timestamp" value="2024-09-12T15:54:08.773+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Take out samples"/>
+            <date key="time:timestamp" value="2024-09-12T15:54:17.603+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene and wear gloves"/>
+            <date key="time:timestamp" value="2024-09-12T15:54:43.551+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Monitor patient"/>
+            <date key="time:timestamp" value="2024-09-12T15:54:59.082+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Stop blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T15:54:59.842+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove needle"/>
+            <date key="time:timestamp" value="2024-09-12T15:55:09.233+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove gloves, dispose of gloves, and hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T15:55:27.615+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-out"/>
+            <date key="time:timestamp" value="2024-09-12T15:55:31.327+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Take out samples"/>
+            <date key="time:timestamp" value="2024-09-12T15:55:36.040+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T15:55:50.994+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-out"/>
+            <date key="time:timestamp" value="2024-09-12T15:55:52.484+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-in"/>
+            <date key="time:timestamp" value="2024-09-12T15:58:34.465+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-in"/>
+            <date key="time:timestamp" value="2024-09-12T15:58:40.979+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T15:58:54.979+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Check blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T15:58:58.317+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Apply tourniquet"/>
+            <date key="time:timestamp" value="2024-09-12T15:59:07.420+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene and wear gloves"/>
+            <date key="time:timestamp" value="2024-09-12T15:59:58.005+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disinfect injection site"/>
+            <date key="time:timestamp" value="2024-09-12T16:00:07.703+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Insert needle"/>
+            <date key="time:timestamp" value="2024-09-12T16:00:18.175+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove tourniquet"/>
+            <date key="time:timestamp" value="2024-09-12T16:00:29.441+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Start blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T16:00:37.251+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Monitor patient"/>
+            <date key="time:timestamp" value="2024-09-12T16:00:52.624+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Stop blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T16:00:57.236+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove needle"/>
+            <date key="time:timestamp" value="2024-09-12T16:01:11.882+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove gloves and hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T16:01:34.619+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-out"/>
+            <date key="time:timestamp" value="2024-09-12T16:01:50.822+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Take out samples"/>
+            <date key="time:timestamp" value="2024-09-12T16:02:01.865+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T16:02:12.818+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-out"/>
+            <date key="time:timestamp" value="2024-09-12T16:02:17.060+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-in"/>
+            <date key="time:timestamp" value="2024-09-12T16:04:33.120+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-in"/>
+            <date key="time:timestamp" value="2024-09-12T16:04:38.568+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T16:04:55.871+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Check blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T16:04:58.323+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disturbance"/>
+            <date key="time:timestamp" value="2024-09-12T16:05:03.928+00:00"/>
+            <string key="PLACEHOLDER_DISTURBANCE:PLACEHOLDER_DISTURBANCE" value="PLACEHOLDER_DISTURBANCE"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T16:05:23.022+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Apply tourniquet"/>
+            <date key="time:timestamp" value="2024-09-12T16:05:32.177+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene and wear gloves"/>
+            <date key="time:timestamp" value="2024-09-12T16:06:10.128+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disinfect injection site"/>
+            <date key="time:timestamp" value="2024-09-12T16:06:17.791+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Insert needle"/>
+            <date key="time:timestamp" value="2024-09-12T16:06:27.374+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove tourniquet"/>
+            <date key="time:timestamp" value="2024-09-12T16:06:34.116+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Start blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T16:06:38.170+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Monitor patient"/>
+            <date key="time:timestamp" value="2024-09-12T16:06:49.674+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Stop blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T16:06:53.734+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove needle"/>
+            <date key="time:timestamp" value="2024-09-12T16:07:01.842+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove gloves and hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T16:07:26.510+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-out"/>
+            <date key="time:timestamp" value="2024-09-12T16:07:29.389+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Take out samples"/>
+            <date key="time:timestamp" value="2024-09-12T16:07:41.305+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T16:07:55.868+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-out"/>
+            <date key="time:timestamp" value="2024-09-12T16:07:58.800+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-in"/>
+            <date key="time:timestamp" value="2024-09-12T16:09:38.933+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-in"/>
+            <date key="time:timestamp" value="2024-09-12T16:09:46.023+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T16:09:56.577+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Check blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T16:10:01.198+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Apply tourniquet"/>
+            <date key="time:timestamp" value="2024-09-12T16:10:17.048+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene and wear gloves"/>
+            <date key="time:timestamp" value="2024-09-12T16:10:49.231+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disinfect injection site"/>
+            <date key="time:timestamp" value="2024-09-12T16:11:12.642+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Insert needle"/>
+            <date key="time:timestamp" value="2024-09-12T16:11:35.657+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove tourniquet"/>
+            <date key="time:timestamp" value="2024-09-12T16:11:40.783+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Start blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T16:11:48.009+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Monitor patient"/>
+            <date key="time:timestamp" value="2024-09-12T16:12:05.688+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Stop blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T16:12:13.209+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove needle"/>
+            <date key="time:timestamp" value="2024-09-12T16:12:29.685+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove gloves and hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T16:12:50.591+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-out"/>
+            <date key="time:timestamp" value="2024-09-12T16:12:55.253+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disturbance"/>
+            <date key="time:timestamp" value="2024-09-12T16:13:02.888+00:00"/>
+            <string key="PLACEHOLDER_DISTURBANCE:PLACEHOLDER_DISTURBANCE" value="PLACEHOLDER_DISTURBANCE"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T16:13:13.272+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Take out samples"/>
+            <date key="time:timestamp" value="2024-09-12T16:13:22.856+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T16:13:35.299+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-out"/>
+            <date key="time:timestamp" value="2024-09-12T16:13:41.232+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-in"/>
+            <date key="time:timestamp" value="2024-09-12T16:15:50.080+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-in"/>
+            <date key="time:timestamp" value="2024-09-12T16:15:59.101+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T16:16:18.921+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Check blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T16:16:26.165+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disturbance"/>
+            <date key="time:timestamp" value="2024-09-12T16:16:32.065+00:00"/>
+            <string key="PLACEHOLDER_DISTURBANCE:PLACEHOLDER_DISTURBANCE" value="PLACEHOLDER_DISTURBANCE"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T16:16:48.016+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Apply tourniquet"/>
+            <date key="time:timestamp" value="2024-09-12T16:16:55.966+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene and wear gloves"/>
+            <date key="time:timestamp" value="2024-09-12T16:17:18.708+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disinfect injection site"/>
+            <date key="time:timestamp" value="2024-09-12T16:17:34.392+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Insert needle"/>
+            <date key="time:timestamp" value="2024-09-12T16:18:04.524+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove tourniquet"/>
+            <date key="time:timestamp" value="2024-09-12T16:18:11.964+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Start blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T16:18:17.892+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Monitor patient"/>
+            <date key="time:timestamp" value="2024-09-12T16:18:28.503+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Stop blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T16:18:32.534+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove needle"/>
+            <date key="time:timestamp" value="2024-09-12T16:18:44.656+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove gloves and hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T16:19:09.924+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-out"/>
+            <date key="time:timestamp" value="2024-09-12T16:19:13.640+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Take out samples"/>
+            <date key="time:timestamp" value="2024-09-12T16:19:22.804+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T16:19:35.685+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-out"/>
+            <date key="time:timestamp" value="2024-09-12T16:19:39.728+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-in"/>
+            <date key="time:timestamp" value="2024-09-12T16:21:21.220+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-in"/>
+            <date key="time:timestamp" value="2024-09-12T16:21:33.557+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T16:22:21.428+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Check blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T16:22:26.746+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disturbance"/>
+            <date key="time:timestamp" value="2024-09-12T16:22:49.748+00:00"/>
+            <string key="PLACEHOLDER_DISTURBANCE:PLACEHOLDER_DISTURBANCE" value="PLACEHOLDER_DISTURBANCE"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T16:23:29.032+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Apply tourniquet"/>
+            <date key="time:timestamp" value="2024-09-12T16:23:39.330+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene and wear gloves"/>
+            <date key="time:timestamp" value="2024-09-12T16:25:18.493+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disinfect injection site"/>
+            <date key="time:timestamp" value="2024-09-12T16:25:32.950+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Insert needle"/>
+            <date key="time:timestamp" value="2024-09-12T16:25:52.055+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove tourniquet"/>
+            <date key="time:timestamp" value="2024-09-12T16:26:07.302+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Start blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T16:26:14.073+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Monitor patient"/>
+            <date key="time:timestamp" value="2024-09-12T16:26:26.762+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Stop blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T16:26:32.469+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove needle"/>
+            <date key="time:timestamp" value="2024-09-12T16:26:52.513+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove gloves and hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T16:27:37.102+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-out"/>
+            <date key="time:timestamp" value="2024-09-12T16:27:46.470+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Take out samples"/>
+            <date key="time:timestamp" value="2024-09-12T16:28:01.570+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T16:28:44.025+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-out"/>
+            <date key="time:timestamp" value="2024-09-12T16:28:47.952+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-in"/>
+            <date key="time:timestamp" value="2024-09-12T16:30:46.067+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-in"/>
+            <date key="time:timestamp" value="2024-09-12T16:30:50.386+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-in"/>
+            <date key="time:timestamp" value="2024-09-12T16:31:01.467+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T16:31:31.662+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Check blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T16:31:38.114+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Apply tourniquet"/>
+            <date key="time:timestamp" value="2024-09-12T16:31:51.483+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene and wear gloves"/>
+            <date key="time:timestamp" value="2024-09-12T16:32:43.562+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disinfect injection site"/>
+            <date key="time:timestamp" value="2024-09-12T16:32:56.761+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Insert needle"/>
+            <date key="time:timestamp" value="2024-09-12T16:33:11.834+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove tourniquet"/>
+            <date key="time:timestamp" value="2024-09-12T16:33:24.145+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Start blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T16:33:29.370+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove gloves, dispose of gloves, and hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T16:34:10.534+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Check blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T16:34:16.707+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Apply tourniquet"/>
+            <date key="time:timestamp" value="2024-09-12T16:34:27.160+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene and wear gloves"/>
+            <date key="time:timestamp" value="2024-09-12T16:35:26.246+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disinfect injection site"/>
+            <date key="time:timestamp" value="2024-09-12T16:35:33.881+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Insert needle"/>
+            <date key="time:timestamp" value="2024-09-12T16:35:49.724+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove tourniquet"/>
+            <date key="time:timestamp" value="2024-09-12T16:35:55.751+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Start blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T16:36:01.526+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Monitor patient"/>
+            <date key="time:timestamp" value="2024-09-12T16:36:21.237+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Stop blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T16:36:29.737+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove needle"/>
+            <date key="time:timestamp" value="2024-09-12T16:36:45.422+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove gloves, dispose of gloves, and hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T16:37:19.904+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-out"/>
+            <date key="time:timestamp" value="2024-09-12T16:37:26.086+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Take out samples"/>
+            <date key="time:timestamp" value="2024-09-12T16:37:34.780+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene and wear gloves"/>
+            <date key="time:timestamp" value="2024-09-12T16:38:24.971+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Stop blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T16:38:30.046+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Monitor patient"/>
+            <date key="time:timestamp" value="2024-09-12T16:38:30.690+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove needle"/>
+            <date key="time:timestamp" value="2024-09-12T16:38:41.652+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove gloves, dispose of gloves, and hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T16:39:18.018+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-out"/>
+            <date key="time:timestamp" value="2024-09-12T16:39:21.951+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Take out samples"/>
+            <date key="time:timestamp" value="2024-09-12T16:39:31.391+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T16:40:01.463+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-out"/>
+            <date key="time:timestamp" value="2024-09-12T16:40:04.787+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-in"/>
+            <date key="time:timestamp" value="2024-09-12T16:41:36.363+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-in"/>
+            <date key="time:timestamp" value="2024-09-12T16:41:42.816+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T16:42:01.364+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Check blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T16:42:07.468+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disturbance"/>
+            <date key="time:timestamp" value="2024-09-12T16:42:16.040+00:00"/>
+            <string key="PLACEHOLDER_DISTURBANCE:PLACEHOLDER_DISTURBANCE" value="PLACEHOLDER_DISTURBANCE"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T16:42:36.125+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Apply tourniquet"/>
+            <date key="time:timestamp" value="2024-09-12T16:42:44.957+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene and wear gloves"/>
+            <date key="time:timestamp" value="2024-09-12T16:43:28.341+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disinfect injection site"/>
+            <date key="time:timestamp" value="2024-09-12T16:43:41.848+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Insert needle"/>
+            <date key="time:timestamp" value="2024-09-12T16:43:54.696+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove tourniquet"/>
+            <date key="time:timestamp" value="2024-09-12T16:44:05.005+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Start blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T16:44:11.415+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Monitor patient"/>
+            <date key="time:timestamp" value="2024-09-12T16:44:20.641+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Stop blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-12T16:44:27.702+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove needle"/>
+            <date key="time:timestamp" value="2024-09-12T16:44:40.683+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove gloves and hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T16:45:13.950+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-out"/>
+            <date key="time:timestamp" value="2024-09-12T16:45:20.565+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Take out samples"/>
+            <date key="time:timestamp" value="2024-09-12T16:45:31.707+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-12T16:45:58.825+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-out"/>
+            <date key="time:timestamp" value="2024-09-12T16:46:02.883+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-in"/>
+            <date key="time:timestamp" value="2024-09-13T10:53:42.328+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-in"/>
+            <date key="time:timestamp" value="2024-09-13T10:53:47.711+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-13T10:54:04.541+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Check blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-13T10:54:09.304+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Apply tourniquet"/>
+            <date key="time:timestamp" value="2024-09-13T10:54:30.116+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene and wear gloves"/>
+            <date key="time:timestamp" value="2024-09-13T10:55:03.023+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disinfect injection site"/>
+            <date key="time:timestamp" value="2024-09-13T10:55:11.730+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Insert needle"/>
+            <date key="time:timestamp" value="2024-09-13T10:55:27.811+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove tourniquet"/>
+            <date key="time:timestamp" value="2024-09-13T10:55:36.212+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Start blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-13T10:55:44.060+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Monitor patient"/>
+            <date key="time:timestamp" value="2024-09-13T10:55:53.776+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Stop blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-13T10:56:00.031+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove needle"/>
+            <date key="time:timestamp" value="2024-09-13T10:56:16.000+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove gloves and hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-13T10:56:41.775+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-out"/>
+            <date key="time:timestamp" value="2024-09-13T10:56:47.030+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Take out samples"/>
+            <date key="time:timestamp" value="2024-09-13T10:57:02.015+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-13T10:57:26.491+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-out"/>
+            <date key="time:timestamp" value="2024-09-13T10:57:30.815+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-in"/>
+            <date key="time:timestamp" value="2024-09-13T10:59:54.076+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-in"/>
+            <date key="time:timestamp" value="2024-09-13T11:00:00.056+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-13T11:00:08.530+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Check blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-13T11:00:11.418+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disturbance"/>
+            <date key="time:timestamp" value="2024-09-13T11:00:18.480+00:00"/>
+            <string key="PLACEHOLDER_DISTURBANCE:PLACEHOLDER_DISTURBANCE" value="PLACEHOLDER_DISTURBANCE"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-13T11:00:26.135+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Apply tourniquet"/>
+            <date key="time:timestamp" value="2024-09-13T11:00:33.501+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene and wear gloves"/>
+            <date key="time:timestamp" value="2024-09-13T11:00:59.202+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disinfect injection site"/>
+            <date key="time:timestamp" value="2024-09-13T11:01:09.717+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Insert needle"/>
+            <date key="time:timestamp" value="2024-09-13T11:01:18.828+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove tourniquet"/>
+            <date key="time:timestamp" value="2024-09-13T11:01:25.237+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Start blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-13T11:01:30.008+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Monitor patient"/>
+            <date key="time:timestamp" value="2024-09-13T11:01:40.129+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Stop blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-13T11:01:42.022+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove needle"/>
+            <date key="time:timestamp" value="2024-09-13T11:01:51.428+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove gloves and hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-13T11:02:03.940+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-out"/>
+            <date key="time:timestamp" value="2024-09-13T11:02:05.762+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Take out samples"/>
+            <date key="time:timestamp" value="2024-09-13T11:02:13.615+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-13T11:02:20.266+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-out"/>
+            <date key="time:timestamp" value="2024-09-13T11:02:23.765+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-in"/>
+            <date key="time:timestamp" value="2024-09-13T11:04:00.423+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-in"/>
+            <date key="time:timestamp" value="2024-09-13T11:04:06.070+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Check blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-13T11:04:25.450+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-13T11:04:25.789+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disturbance"/>
+            <date key="time:timestamp" value="2024-09-13T11:04:33.349+00:00"/>
+            <string key="PLACEHOLDER_DISTURBANCE:PLACEHOLDER_DISTURBANCE" value="PLACEHOLDER_DISTURBANCE"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-13T11:04:45.753+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Apply tourniquet"/>
+            <date key="time:timestamp" value="2024-09-13T11:04:53.212+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene and wear gloves"/>
+            <date key="time:timestamp" value="2024-09-13T11:05:32.000+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disinfect injection site"/>
+            <date key="time:timestamp" value="2024-09-13T11:05:42.417+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Insert needle"/>
+            <date key="time:timestamp" value="2024-09-13T11:05:54.539+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove tourniquet"/>
+            <date key="time:timestamp" value="2024-09-13T11:06:00.008+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Start blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-13T11:06:02.801+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Monitor patient"/>
+            <date key="time:timestamp" value="2024-09-13T11:06:12.002+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Stop blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-13T11:06:15.106+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove needle"/>
+            <date key="time:timestamp" value="2024-09-13T11:06:24.941+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove gloves and hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-13T11:06:40.793+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-out"/>
+            <date key="time:timestamp" value="2024-09-13T11:06:43.634+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Take out samples"/>
+            <date key="time:timestamp" value="2024-09-13T11:06:53.827+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-13T11:07:06.548+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-out"/>
+            <date key="time:timestamp" value="2024-09-13T11:07:08.837+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-in"/>
+            <date key="time:timestamp" value="2024-09-13T11:09:06.599+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-in"/>
+            <date key="time:timestamp" value="2024-09-13T11:09:11.570+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-13T11:09:20.738+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Check blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-13T11:09:27.232+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disturbance"/>
+            <date key="time:timestamp" value="2024-09-13T11:09:34.499+00:00"/>
+            <string key="PLACEHOLDER_DISTURBANCE:PLACEHOLDER_DISTURBANCE" value="PLACEHOLDER_DISTURBANCE"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-13T11:09:42.028+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Apply tourniquet"/>
+            <date key="time:timestamp" value="2024-09-13T11:09:53.069+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene and wear gloves"/>
+            <date key="time:timestamp" value="2024-09-13T11:10:46.781+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disinfect injection site"/>
+            <date key="time:timestamp" value="2024-09-13T11:11:02.865+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Insert needle"/>
+            <date key="time:timestamp" value="2024-09-13T11:11:13.355+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove tourniquet"/>
+            <date key="time:timestamp" value="2024-09-13T11:11:19.298+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Start blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-13T11:11:23.963+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Monitor patient"/>
+            <date key="time:timestamp" value="2024-09-13T11:11:39.930+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Stop blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-13T11:11:55.333+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove needle"/>
+            <date key="time:timestamp" value="2024-09-13T11:12:06.586+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove gloves and hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-13T11:12:22.798+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-out"/>
+            <date key="time:timestamp" value="2024-09-13T11:12:24.893+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Take out samples"/>
+            <date key="time:timestamp" value="2024-09-13T11:12:43.302+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-13T11:12:53.751+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-out"/>
+            <date key="time:timestamp" value="2024-09-13T11:12:57.098+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-in"/>
+            <date key="time:timestamp" value="2024-09-13T11:15:43.259+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-in"/>
+            <date key="time:timestamp" value="2024-09-13T11:15:45.843+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-13T11:15:51.047+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-in"/>
+            <date key="time:timestamp" value="2024-09-13T11:15:53.059+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-13T11:15:59.291+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Check blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-13T11:16:01.220+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disturbance"/>
+            <date key="time:timestamp" value="2024-09-13T11:16:16.331+00:00"/>
+            <string key="PLACEHOLDER_DISTURBANCE:PLACEHOLDER_DISTURBANCE" value="PLACEHOLDER_DISTURBANCE"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene and wear gloves"/>
+            <date key="time:timestamp" value="2024-09-13T11:16:19.396+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Apply tourniquet"/>
+            <date key="time:timestamp" value="2024-09-13T11:16:34.224+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Perform Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-13T11:17:08.269+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disinfect injection site"/>
+            <date key="time:timestamp" value="2024-09-13T11:17:20.695+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Insert needle"/>
+            <date key="time:timestamp" value="2024-09-13T11:17:36.427+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove tourniquet"/>
+            <date key="time:timestamp" value="2024-09-13T11:17:41.687+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Start blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-13T11:17:51.215+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Monitor patient"/>
+            <date key="time:timestamp" value="2024-09-13T11:18:05.171+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Stop blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-13T11:18:14.232+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove needle"/>
+            <date key="time:timestamp" value="2024-09-13T11:18:34.729+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove gloves and hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-13T11:18:49.608+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-out"/>
+            <date key="time:timestamp" value="2024-09-13T11:18:52.229+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Take out samples"/>
+            <date key="time:timestamp" value="2024-09-13T11:19:01.614+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-13T11:19:07.096+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-out"/>
+            <date key="time:timestamp" value="2024-09-13T11:19:10.611+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-in"/>
+            <date key="time:timestamp" value="2024-09-13T11:20:51.016+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-in"/>
+            <date key="time:timestamp" value="2024-09-13T11:20:56.446+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-13T11:21:04.108+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Check blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-13T11:21:11.029+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disturbance"/>
+            <date key="time:timestamp" value="2024-09-13T11:21:16.419+00:00"/>
+            <string key="PLACEHOLDER_DISTURBANCE:PLACEHOLDER_DISTURBANCE" value="PLACEHOLDER_DISTURBANCE"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-13T11:21:23.908+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Apply tourniquet"/>
+            <date key="time:timestamp" value="2024-09-13T11:21:31.000+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene and wear gloves"/>
+            <date key="time:timestamp" value="2024-09-13T11:21:56.545+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disinfect injection site"/>
+            <date key="time:timestamp" value="2024-09-13T11:22:08.961+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Insert needle"/>
+            <date key="time:timestamp" value="2024-09-13T11:22:19.951+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove tourniquet"/>
+            <date key="time:timestamp" value="2024-09-13T11:22:28.309+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Start blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-13T11:22:33.517+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Monitor patient"/>
+            <date key="time:timestamp" value="2024-09-13T11:22:43.789+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Stop blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-13T11:22:48.838+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove needle"/>
+            <date key="time:timestamp" value="2024-09-13T11:22:57.915+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove gloves and hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-13T11:23:13.109+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-out"/>
+            <date key="time:timestamp" value="2024-09-13T11:23:17.370+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Take out samples"/>
+            <date key="time:timestamp" value="2024-09-13T11:23:27.717+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-13T11:23:34.280+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-out"/>
+            <date key="time:timestamp" value="2024-09-13T11:23:37.118+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-in"/>
+            <date key="time:timestamp" value="2024-09-13T11:27:24.943+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-in"/>
+            <date key="time:timestamp" value="2024-09-13T11:27:35.178+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-in"/>
+            <date key="time:timestamp" value="2024-09-13T11:27:43.940+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-13T11:27:52.929+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Check blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-13T11:28:00.827+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Apply tourniquet"/>
+            <date key="time:timestamp" value="2024-09-13T11:28:13.158+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene and wear gloves"/>
+            <date key="time:timestamp" value="2024-09-13T11:28:31.696+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disinfect injection site"/>
+            <date key="time:timestamp" value="2024-09-13T11:28:46.853+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Insert needle"/>
+            <date key="time:timestamp" value="2024-09-13T11:28:58.732+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove tourniquet"/>
+            <date key="time:timestamp" value="2024-09-13T11:29:14.616+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Start blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-13T11:29:20.849+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove gloves, dispose of gloves, and hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-13T11:29:31.420+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Check blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-13T11:29:37.693+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Apply tourniquet"/>
+            <date key="time:timestamp" value="2024-09-13T11:29:45.327+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene and wear gloves"/>
+            <date key="time:timestamp" value="2024-09-13T11:29:57.649+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disinfect injection site"/>
+            <date key="time:timestamp" value="2024-09-13T11:30:08.255+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Insert needle"/>
+            <date key="time:timestamp" value="2024-09-13T11:30:19.399+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove tourniquet"/>
+            <date key="time:timestamp" value="2024-09-13T11:30:26.751+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Start blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-13T11:30:33.332+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Monitor patient"/>
+            <date key="time:timestamp" value="2024-09-13T11:30:45.609+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Stop blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-13T11:30:52.968+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove needle"/>
+            <date key="time:timestamp" value="2024-09-13T11:31:04.743+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove gloves, dispose of gloves, and hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-13T11:31:18.019+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-out"/>
+            <date key="time:timestamp" value="2024-09-13T11:31:23.576+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Take out samples"/>
+            <date key="time:timestamp" value="2024-09-13T11:31:38.181+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene and wear gloves"/>
+            <date key="time:timestamp" value="2024-09-13T11:31:54.623+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Monitor patient"/>
+            <date key="time:timestamp" value="2024-09-13T11:32:09.222+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Stop blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-13T11:32:14.439+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove needle"/>
+            <date key="time:timestamp" value="2024-09-13T11:32:27.831+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove gloves, dispose of gloves, and hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-13T11:32:43.268+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-out"/>
+            <date key="time:timestamp" value="2024-09-13T11:32:45.233+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Take out samples"/>
+            <date key="time:timestamp" value="2024-09-13T11:32:53.009+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-13T11:32:57.678+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-out"/>
+            <date key="time:timestamp" value="2024-09-13T11:33:01.148+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-in"/>
+            <date key="time:timestamp" value="2024-09-13T11:36:27.597+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-in"/>
+            <date key="time:timestamp" value="2024-09-13T11:36:31.767+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-in"/>
+            <date key="time:timestamp" value="2024-09-13T11:36:41.441+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-13T11:36:50.152+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Check blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-13T11:36:55.007+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Apply tourniquet"/>
+            <date key="time:timestamp" value="2024-09-13T11:37:03.626+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene and wear gloves"/>
+            <date key="time:timestamp" value="2024-09-13T11:37:23.124+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disinfect injection site"/>
+            <date key="time:timestamp" value="2024-09-13T11:37:53.991+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Insert needle"/>
+            <date key="time:timestamp" value="2024-09-13T11:38:15.647+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove tourniquet"/>
+            <date key="time:timestamp" value="2024-09-13T11:38:22.742+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Start blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-13T11:38:28.162+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove gloves, dispose of gloves, and hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-13T11:38:46.228+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Check blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-13T11:38:51.296+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Apply tourniquet"/>
+            <date key="time:timestamp" value="2024-09-13T11:38:57.555+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene and wear gloves"/>
+            <date key="time:timestamp" value="2024-09-13T11:39:22.959+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Disinfect injection site"/>
+            <date key="time:timestamp" value="2024-09-13T11:39:35.294+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Insert needle"/>
+            <date key="time:timestamp" value="2024-09-13T11:39:53.173+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove tourniquet"/>
+            <date key="time:timestamp" value="2024-09-13T11:40:01.368+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Start blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-13T11:40:04.465+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Monitor patient"/>
+            <date key="time:timestamp" value="2024-09-13T11:40:19.216+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Stop blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-13T11:40:25.319+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove needle"/>
+            <date key="time:timestamp" value="2024-09-13T11:40:40.986+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove gloves, dispose of gloves, and hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-13T11:41:03.126+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-out"/>
+            <date key="time:timestamp" value="2024-09-13T11:41:08.456+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Take out samples"/>
+            <date key="time:timestamp" value="2024-09-13T11:41:17.614+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Right"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene and wear gloves"/>
+            <date key="time:timestamp" value="2024-09-13T11:41:43.720+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Monitor patient"/>
+            <date key="time:timestamp" value="2024-09-13T11:41:50.970+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Stop blood drawing machine"/>
+            <date key="time:timestamp" value="2024-09-13T11:41:59.274+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove needle"/>
+            <date key="time:timestamp" value="2024-09-13T11:42:12.904+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Remove gloves, dispose of gloves, and hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-13T11:42:28.117+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Donor check-out"/>
+            <date key="time:timestamp" value="2024-09-13T11:42:31.704+00:00"/>
+            <string key="perform:donor" value="PLACEHOLDER_DONOR"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Take out samples"/>
+            <date key="time:timestamp" value="2024-09-13T11:42:42.466+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+        <event>
+            <string key="concept:name" value="Hand hygiene"/>
+            <date key="time:timestamp" value="2024-09-13T11:42:51.933+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+        </event>
+        <event>
+            <string key="concept:name" value="HCW check-out"/>
+            <date key="time:timestamp" value="2024-09-13T11:42:56.446+00:00"/>
+            <string key="perform:hcw" value="PLACEHOLDER_HCW"/>
+            <string key="at:location" value="Patient Left"/>
+        </event>
+    </trace>
+</log>
