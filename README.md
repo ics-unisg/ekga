@@ -6,4 +6,6 @@ The prototype implementation accompanies the paper "..." by Marco Franceschetti,
 
 The implementation requires Neo4J as the graph database to store the graph. To run it, execute python main.py.
 
+**Add something about the parameters to run main.py. Need to implement xes_file_path & USE_MQTT = False (lines 25 & 26) parametrized to the starting instruction.**
+
 The "results" folder contains the csv files and graphs with the measured times (in seconds) for processing each new event in a sample stream.
