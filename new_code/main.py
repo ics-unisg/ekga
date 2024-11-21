@@ -17,12 +17,12 @@ from EKG_base import BaseEKG
 #
 #######################################################################################
 # Neo4j connection settings
-uri = "neo4j://127.0.0.1:7687"
+uri = "neo4j://127.0.0.1:7690"
 user = "neo4j"
 password = "12345678"
 
 # User input
-xes_file_path = "..."
+xes_file_path = "extended_event_log_6432.xes"
 USE_MQTT = False
 
 
