@@ -4,7 +4,7 @@ import json
 import threading
 import queue
 
-from mqtt_client import XESMQTTProducer, XESMQTTConsumer
+from utils.mqtt_client import XESMQTTProducer, XESMQTTConsumer
 
 
 class LogReader:
@@ -139,24 +139,38 @@ class EventXES:
 class LogProcessor:
 
     def __init__(self, log_path, USE_MQTT):
-        self.log = LogReader(log_path)
+        if log_path:
+            self.log = LogReader(log_path)
+        else:
+            self.log = []
         self.USE_MQTT = USE_MQTT
         self.message_queue = queue.Queue()
 
-        if USE_MQTT:
+        # "SenderReceiver"
+        if USE_MQTT == "SenderReceiver":
             self.sender = XESMQTTProducer("ftsim.weber.ics.unisg.ch", "smart-healthcare", 1883, "ftsim", "unisg")
             self.sender.connect()
 
             self.receiver = XESMQTTConsumer("ftsim.weber.ics.unisg.ch", "smart-healthcare", 1883, "ftsim", "unisg")
             self.receiver.connect(True)
             self.receiver.subscribe_default(lambda payload: self.message_queue.put(payload))
-        self.sender_thread = threading.Thread(target=self._send_messages, daemon=True)
-        self.sender_thread.start()
+
+            self.sender_thread = threading.Thread(target=self._send_messages, daemon=True)
+            self.sender_thread.start()
+        # "Receiver"
+        elif USE_MQTT == "Receiver":
+            self.receiver = XESMQTTConsumer("ftsim.weber.ics.unisg.ch", "smart-healthcare", 1883, "ftsim", "unisg")
+            self.receiver.connect(True)
+            self.receiver.subscribe_default(lambda payload: self.message_queue.put(payload))
+        # False
+        else:
+            self.sender_thread = threading.Thread(target=self._send_messages, daemon=True)
+            self.sender_thread.start()
 
     def _send_messages(self):
         """Internal method to send messages in the background."""
         for event in self.log:
-            if self.USE_MQTT:
+            if self.USE_MQTT == "SenderReceiver":
                 self.sender.publish(event)
             else:
                 event = {"name": event.name,
@@ -166,7 +180,7 @@ class LogProcessor:
                 self.message_queue.put(event)
             time.sleep(0.1)
 
-        if self.USE_MQTT:
+        if self.USE_MQTT == "SenderReceiver":
             self.sender.disconnect()
 
             self.receiver.unsubscribe_default()
