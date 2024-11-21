@@ -1,20 +1,14 @@
-<<<<<<< Updated upstream
-from datetime import datetime
-from neo4j import GraphDatabase
-import importlib
+import json
 import time
-import matplotlib.pyplot as plt
+import uuid
+import queue
 import pandas as pd
-#  Include the packages despite not in the same package / not installed via pip.
-module_name = "EKG_base"
-class_name = "BaseEKG"
-module = importlib.import_module(module_name)
-imported_base = getattr(module, class_name)
-#  Include the packages despite not in the same package / not installed via pip.
-module_name = "EKG_simulation"
-class_name = "SimulationEKG"
-module = importlib.import_module(module_name)
-imported_simulation = getattr(module, class_name)
+import matplotlib.pyplot as plt
+from neo4j import GraphDatabase
+
+from utils.xes_log_reader import LogProcessor
+
+from EKG_base import BaseEKG
 
 
 #######################################################################################
@@ -23,127 +17,82 @@ imported_simulation = getattr(module, class_name)
 #
 #######################################################################################
 # Neo4j connection settings
-uri = "neo4j://127.0.0.1:7687"
+uri = "neo4j://127.0.0.1:7690"
 user = "neo4j"
 password = "12345678"
-# Define rules
-rules = True # True / False
-module_name = "EKG_rules" # / just set rules to False
-class_name = "RulesEKG" #  / just set rules to False
+
+# User input
+xes_file_path = "extended_event_log_6432.xes"
+USE_MQTT = False
 
 
+if __name__ == '__main__':
 
-#######################################################################################
-#
-# Main
-#
-#######################################################################################
-for run in range(20):
-    # ------------> 1: G ← new EKGA <---------------- #
-    if rules:
-        module = importlib.import_module(module_name)
-        imported_rules = getattr(module, class_name)
-        rules = imported_rules()
-    simulator = imported_base(uri, user, password, rules)
-    # ------------> 2: for all event e ∈ s do <---------------- #
-    durations = []
-    event_indices = []
-    for index, event in enumerate(imported_simulation()):
-        # input("Press Enter for Event")
-        start_time = time.time()
-        simulator.process_event(event)
-        end_time = time.time()
-        durations.append(end_time - start_time)
-        event_indices.append(index + 1)
-    simulator.close()
-    # ------------> 20: end for <---------------- #
+    processor = LogProcessor(log_path=xes_file_path, USE_MQTT=USE_MQTT)
+    sender_alive = True
 
-    # Store the runtime
-    df = pd.DataFrame({"EventIndex": event_indices, "Duration": durations})
-    df.to_csv(f"results/durations_run{run+1}.csv", index=False)
+    # ------------> 1: G ← new EKGA; <------------
+    processing_durations = []
+    EKG = BaseEKG(uri, user, password)
 
-    # Store the plots
-    plt.figure(figsize=(10, 6))
-    plt.plot(event_indices, durations, marker='o')
-    plt.xlabel('Event Index')
-    plt.ylabel('Processing Time (seconds)')
-    plt.title('Processing Time for Each Event')
-    plt.grid(True)
-    plt.savefig(f"results/durationsPlot_run{run+1}.png")
+    while True:
+        # In a live MQTT setting we handle the termination via keyboard interrupt.
+        # Since we are streaming to MQTT from the same file in our setup, we are
+        # able to track the progress for convenience.
+        if USE_MQTT:
+            if sender_alive and not processor.sender_thread.is_alive():
+                print("Sender finished")
+                sender_alive = False
+            if not sender_alive and processor.message_queue.empty():
+                print("Sender finished and Queue emptied")
+                # Determine uuid
+                uuid_nr = uuid.uuid4().hex
+                # Store the runtime
+                df = pd.DataFrame({"Duration": processing_durations})
+                df.to_csv(f"results/durations_{xes_file_path}_{uuid_nr}.csv", index=False)
+                # Store the plots
+                plt.figure(figsize=(10, 6))
+                plt.plot(list(range(len(processing_durations))), processing_durations, marker='o')
+                plt.xlabel('Event Index')
+                plt.ylabel('Processing Time (seconds)')
+                plt.title('Processing Time for Each Event')
+                plt.grid(True)
+                plt.savefig(f"results/durationsPlot_{xes_file_path}_{uuid_nr}.png")
+        # Streaming from a file, we wait that the full file has been sent and queue emptied.
+        else:
+            if sender_alive and not processor.sender_thread.is_alive():
+                print("Sender finished")
+                sender_alive = False
+            if not sender_alive and processor.message_queue.empty():
+                print("Sender finished and Queue emptied")
+                # Determine uuid
+                uuid_nr = uuid.uuid4().hex
+                # Store the runtime
+                df = pd.DataFrame({"Duration": processing_durations})
+                df.to_csv(f"results/durations_{xes_file_path}_{uuid_nr}.csv", index=False)
+                # Store the plots
+                plt.figure(figsize=(10, 6))
+                plt.plot(list(range(len(processing_durations))), processing_durations, marker='o')
+                plt.xlabel('Event Index')
+                plt.ylabel('Processing Time (seconds)')
+                plt.title(f'Processing Time for Each Event in {xes_file_path}')
+                plt.grid(True)
+                plt.savefig(f"results/durationsPlot_{xes_file_path}_{uuid_nr}.png")
+                # End
+                break
+        try:
+            message = processor.message_queue.get(timeout=1)
+            # ------------> 2: for all event e ∈ s do <------------
+            start_time = time.time()
+            EKG.process_event(message)
+            end_time = time.time()
+            duration = end_time - start_time
+            processing_durations.append(duration)
+            print(duration)
+            #input("Hit Enter to proceed") # allow step-by-step construction
+            # ------------> 14: end for <------------
+            processor.message_queue.task_done()
+        except queue.Empty:
+            continue
 
-    input("Continue?")
-=======
-from datetime import datetime
-from neo4j import GraphDatabase
-import importlib
-import time
-import matplotlib.pyplot as plt
-import pandas as pd
-#  Include the packages despite not in the same package / not installed via pip.
-module_name = "EKG_base"
-class_name = "BaseEKG"
-module = importlib.import_module(module_name)
-imported_base = getattr(module, class_name)
-#  Include the packages despite not in the same package / not installed via pip.
-module_name = "EKG_simulation"
-class_name = "SimulationEKG"
-module = importlib.import_module(module_name)
-imported_simulation = getattr(module, class_name)
-
-
-#######################################################################################
-#
-# User defined
-#
-#######################################################################################
-# Neo4j connection settings
-uri = "neo4j://127.0.0.1:7687"
-user = "neo4j"
-password = "12345678"
-# Define rules
-rules = True # True / False
-module_name = "EKG_rules" # / just set rules to False
-class_name = "RulesEKG" #  / just set rules to False
-
-
-
-#######################################################################################
-#
-# Main
-#
-#######################################################################################
-for run in range(20):
-    # ------------> 1: G ← new EKGA <---------------- #
-    if rules:
-        module = importlib.import_module(module_name)
-        imported_rules = getattr(module, class_name)
-        rules = imported_rules()
-    simulator = imported_base(uri, user, password, rules)
-    # ------------> 2: for all event e ∈ s do <---------------- #
-    durations = []
-    event_indices = []
-    for index, event in enumerate(imported_simulation()):
-        # input("Press Enter for Event")
-        start_time = time.time()
-        simulator.process_event(event)
-        end_time = time.time()
-        durations.append(end_time - start_time)
-        event_indices.append(index + 1)
-    simulator.close()
-    # ------------> 20: end for <---------------- #
-
-    # Store the runtime
-    df = pd.DataFrame({"EventIndex": event_indices, "Duration": durations})
-    df.to_csv(f"results/durations_run{run+1}.csv", index=False)
-
-    # Store the plots
-    plt.figure(figsize=(10, 6))
-    plt.plot(event_indices, durations, marker='o')
-    plt.xlabel('Event Index')
-    plt.ylabel('Processing Time (seconds)')
-    plt.title('Processing Time for Each Event')
-    plt.grid(True)
-    plt.savefig(f"results/durationsPlot_run{run+1}.png")
-
-    input("Continue?")
->>>>>>> Stashed changes
+    EKG.close()
