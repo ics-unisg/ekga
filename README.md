@@ -1,4 +1,4 @@
-# Event Knowledge Graphs with Ambiguity
+# Event Knowledge Graphs ...
 
 This repository contains a prototype implementation of a framework for the online construction of an Event Knowledge Graph from a stream of events.
 
