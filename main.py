@@ -17,7 +17,7 @@ from EKG_base import BaseEKG
 #
 #######################################################################################
 # Neo4j connection settings
-uri = "neo4j://127.0.0.1:7690"
+uri = "neo4j://127.0.0.1:7687"
 user = "neo4j"
 password = "12345678"
 
