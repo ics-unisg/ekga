@@ -49,7 +49,6 @@ if __name__ == '__main__':
                                               pw=mqtt_password)
     sender_alive = True
 
-    # ------------> 1: G ← new EKGA; <------------
     processing_durations = []
     EKG = BaseEKG(uri, user, password)
 
@@ -113,7 +112,6 @@ if __name__ == '__main__':
             duration = end_time - start_time
             processing_durations.append(duration)
             print(duration)
-            input()
 
             processor.message_queue.task_done()
         except queue.Empty:
