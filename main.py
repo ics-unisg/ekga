@@ -31,7 +31,7 @@ mqtt_user = "ftsim"
 mqtt_password = "unisg"
 
 # User input
-xes_file_path = "logs/extended_event_log_6432.xes" # *path* (for False / "SenderReceiver") / None (for USE_MQTT="Receiver")
+xes_file_path = "logs/extended_event_log_mock.xes" # *path* (for False / "SenderReceiver") / None (for USE_MQTT="Receiver")
 
 
 #######################################################################################
@@ -67,15 +67,15 @@ if __name__ == '__main__':
                 uuid_nr = uuid.uuid4().hex
                 # Store the runtime
                 df = pd.DataFrame({"Duration": processing_durations})
-                df.to_csv(f"results/durations_{xes_file_path}_{uuid_nr}.csv", index=False)
+                df.to_csv(f"results/durations_{xes_file_path.split('/')[-1]}_{uuid_nr}.csv", index=False)
                 # Store the plots
                 plt.figure(figsize=(10, 6))
                 plt.plot(list(range(len(processing_durations))), processing_durations, marker='o')
                 plt.xlabel('Event Index')
                 plt.ylabel('Processing Time (seconds)')
-                plt.title('Processing Time for Each Event')
+                plt.title(f"Processing Time for Each Event in {xes_file_path.split('/')[-1]}")
                 plt.grid(True)
-                plt.savefig(f"results/durationsPlot_{xes_file_path}_{uuid_nr}.png")
+                plt.savefig(f"results/durationsPlot_{xes_file_path.split('/')[-1]}_{uuid_nr}.png")
         elif USE_MQTT == "Receiver":
             # In our experiments we are storing the durations after the file is finished. We
             # could do the same for the Receiver only, but it does not change anything compared
@@ -93,15 +93,15 @@ if __name__ == '__main__':
                 uuid_nr = uuid.uuid4().hex
                 # Store the runtime
                 df = pd.DataFrame({"Duration": processing_durations})
-                df.to_csv(f"results/durations_{xes_file_path}_{uuid_nr}.csv", index=False)
+                df.to_csv(f"results/durations_{xes_file_path.split('/')[-1]}_{uuid_nr}.csv", index=False)
                 # Store the plots
                 plt.figure(figsize=(10, 6))
                 plt.plot(list(range(len(processing_durations))), processing_durations, marker='o')
                 plt.xlabel('Event Index')
                 plt.ylabel('Processing Time (seconds)')
-                plt.title(f'Processing Time for Each Event in {xes_file_path}')
+                plt.title(f"Processing Time for Each Event in {xes_file_path.split('/')[-1]}")
                 plt.grid(True)
-                plt.savefig(f"results/durationsPlot_{xes_file_path}_{uuid_nr}.png")
+                plt.savefig(f"results/durationsPlot_{xes_file_path.split('/')[-1]}_{uuid_nr}.png")
                 # End
                 break
         try:
@@ -113,6 +113,7 @@ if __name__ == '__main__':
             duration = end_time - start_time
             processing_durations.append(duration)
             print(duration)
+            input()
 
             processor.message_queue.task_done()
         except queue.Empty:
