@@ -10,7 +10,7 @@ The prototype implementation accompanies the paper "..." by Marco Franceschetti,
 
 ### 1. Prerequisite
 
-The implementation requires Neo4j as the graph database and Python to run the scripts.
+The implementation requires Neo4j as the graph database and Python to run the scripts. *In our tests we employed Neo4j 5.12.0 and Python 3.8.5.*
 
 ### 2. Edit settings
 
