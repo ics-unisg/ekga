@@ -22,7 +22,7 @@ user = "neo4j"
 password = "12345678"
 
 # Streaming Source
-USE_MQTT = "False" # False / "SenderReceiver" / "Receiver"
+USE_MQTT = False # False / "SenderReceiver" / "Receiver"
 # MQTT settings (can leave empty with USE_MQTT=False)
 mqtt_url = "ftsim.weber.ics.unisg.ch"
 mqtt_topic = "smart-healthcare"
