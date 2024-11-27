@@ -23,6 +23,9 @@ The prototype implementation accompanies the paper "Enabling Multi-dimensional A
 
 The implementation requires Neo4j as the graph database and Python to run the scripts. *In our tests we employed Neo4j 5.12.0 and Python 3.8.5.*
 
+The libraries required to run the program can be installed from the requirements.txt file. They include matplotlib, neo4j, numpy, paho-mqtt, pandas, and validators.
+
+
 ### 2. Edit settings
 
 In **main.py** change lines **20-34**.
