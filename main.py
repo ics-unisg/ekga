@@ -23,6 +23,13 @@ password = "12345678"
 
 # Streaming Source
 USE_MQTT = "False" # False / "SenderReceiver" / "Receiver"
+# MQTT settings (can leave empty with USE_MQTT=False)
+mqtt_url = "ftsim.weber.ics.unisg.ch"
+mqtt_topic = "smart-healthcare"
+mqtt_port = 1883
+mqtt_user = "ftsim"
+mqtt_password = "unisg"
+
 # User input
 xes_file_path = "logs/extended_event_log_6432.xes" # *path* (for False / "SenderReceiver") / None (for USE_MQTT="Receiver")
 
@@ -34,7 +41,12 @@ xes_file_path = "logs/extended_event_log_6432.xes" # *path* (for False / "Sender
 #######################################################################################
 if __name__ == '__main__':
 
-    processor = LogProcessor(log_path=xes_file_path, USE_MQTT=USE_MQTT)
+    processor = LogProcessor(log_path=xes_file_path, USE_MQTT=USE_MQTT,
+                                              url=mqtt_url,
+                                              topic=mqtt_topic,
+                                              port=mqtt_port,
+                                              user=mqtt_user,
+                                              pw=mqtt_password)
     sender_alive = True
 
     # ------------> 1: G ← new EKGA; <------------
@@ -94,15 +106,14 @@ if __name__ == '__main__':
                 break
         try:
             message = processor.message_queue.get(timeout=1)
-            # ------------> 2: for all event e ∈ s do <------------
+
             start_time = time.time()
             EKG.process_event(message)
             end_time = time.time()
             duration = end_time - start_time
             processing_durations.append(duration)
             print(duration)
-            #input("Hit Enter to proceed") # allow step-by-step construction
-            # ------------> 14: end for <------------
+
             processor.message_queue.task_done()
         except queue.Empty:
             continue

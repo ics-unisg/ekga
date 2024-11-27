@@ -138,7 +138,7 @@ class EventXES:
 
 class LogProcessor:
 
-    def __init__(self, log_path, USE_MQTT):
+    def __init__(self, log_path, USE_MQTT, url, topic, port, user, pw):
         if log_path:
             self.log = LogReader(log_path)
         else:
@@ -148,10 +148,10 @@ class LogProcessor:
 
         # "SenderReceiver"
         if USE_MQTT == "SenderReceiver":
-            self.sender = XESMQTTProducer("ftsim.weber.ics.unisg.ch", "smart-healthcare", 1883, "ftsim", "unisg")
+            self.sender = XESMQTTProducer(url, topic, port, user, pw)
             self.sender.connect()
 
-            self.receiver = XESMQTTConsumer("ftsim.weber.ics.unisg.ch", "smart-healthcare", 1883, "ftsim", "unisg")
+            self.receiver = XESMQTTConsumer(url, topic, port, user, pw)
             self.receiver.connect(True)
             self.receiver.subscribe_default(lambda payload: self.message_queue.put(payload))
 
@@ -159,7 +159,7 @@ class LogProcessor:
             self.sender_thread.start()
         # "Receiver"
         elif USE_MQTT == "Receiver":
-            self.receiver = XESMQTTConsumer("ftsim.weber.ics.unisg.ch", "smart-healthcare", 1883, "ftsim", "unisg")
+            self.receiver = XESMQTTConsumer(url, topic, port, user, pw)
             self.receiver.connect(True)
             self.receiver.subscribe_default(lambda payload: self.message_queue.put(payload))
         # False
