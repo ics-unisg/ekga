@@ -1,6 +1,13 @@
 [![Python](https://img.shields.io/badge/python-3.8.5-blue?logo=python&logoColor=FED643)](https://www.python.org)
 [![Neo4j](https://img.shields.io/badge/Neo4j-5.12.0-blue?logo=Neo4j&logoColor=#4581C3)](https://neo4j.com/)
 
+# TO DO
+
+Section below
+
+About (top right side)
+
+--- 
 
 # Event Knowledge Graphs ...
 
