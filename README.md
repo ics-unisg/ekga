@@ -1,8 +1,12 @@
+[![Python](https://img.shields.io/badge/python-3.8.5-blue?logo=python&logoColor=FED643)](https://www.python.org)
+[![Neo4j](https://img.shields.io/badge/Neo4j-5.12.0-blue?logo=Neo4j&logoColor=#4581C3)](https://neo4j.com/)
+
+
 # Event Knowledge Graphs ...
 
 This repository contains a prototype implementation of a framework for the online construction of an Event Knowledge Graph from a stream of events.
 
-The prototype implementation accompanies the paper "..." by Marco Franceschetti, Dominik Buchegger, Ronny Seiger, and Barbara Weber, submitted to ....
+The prototype implementation accompanies the paper "Enabling Multi-dimensional Analytics of Digital Traces with Ambiguity" by Marco Franceschetti, Dominik Manuel Buchegger, Ronny Seiger, and Barbara Weber, submitted to CAiSE2025.
 
 ---
 
