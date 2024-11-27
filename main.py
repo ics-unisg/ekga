@@ -17,21 +17,21 @@ from EKG_base import BaseEKG
 #
 #######################################################################################
 # Neo4j connection settings
-uri = "neo4j://127.0.0.1:7687"
-user = "neo4j"
-password = "12345678"
+uri = "CHANGEME"
+user = "CHANGEME"
+password = "CHANGEME"
 
 # Streaming Source
 USE_MQTT = False # False / "SenderReceiver" / "Receiver"
-# MQTT settings (can leave empty with USE_MQTT=False)
-mqtt_url = "ftsim.weber.ics.unisg.ch"
-mqtt_topic = "smart-healthcare"
-mqtt_port = 1883
-mqtt_user = "ftsim"
-mqtt_password = "unisg"
+# MQTT settings (can leave unchanged with USE_MQTT=False)
+mqtt_url = "CHANGEME"
+mqtt_topic = "CHANGEME"
+mqtt_port = "CHANGEME"
+mqtt_user = "CHANGEME"
+mqtt_password = "CHANGEME"
 
 # User input
-xes_file_path = "logs/extended_event_log_mock.xes" # *path* (for False / "SenderReceiver") / None (for USE_MQTT="Receiver")
+xes_file_path = "logs/extended_event_log_6432.xes" # *path* (for False / "SenderReceiver") / None (for USE_MQTT="Receiver")
 
 
 #######################################################################################
