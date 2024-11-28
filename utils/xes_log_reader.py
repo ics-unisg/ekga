@@ -13,7 +13,8 @@ class LogReader:
         with open(log_path, "r") as f:
             log = f.read()
 
-        # Handle :ns0 <--------------------------------------------------------------------------------------
+        # Remove specific namespaces if they are part of the log, e.g.,
+        # here ns0 would be removed from the log.
         log = log.replace("ns0:", "")
         log = log.replace(":ns0", "")
 
