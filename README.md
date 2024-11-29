@@ -7,6 +7,8 @@ Section below
 
 About (top right side)
 
+Tutorial with extended_mock
+
 --- 
 
 # Event Knowledge Graphs ...
