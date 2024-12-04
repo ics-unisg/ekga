@@ -1,5 +1,5 @@
-[![Python](https://img.shields.io/badge/python-3.8.5-blue?logo=python&logoColor=FED643)](https://www.python.org)
-[![Neo4j](https://img.shields.io/badge/Neo4j-5.12.0-blue?logo=Neo4j&logoColor=#4581C3)](https://neo4j.com/)
+[![Python](https://img.shields.io/badge/python-3.11.10-blue?logo=python&logoColor=FED643)](https://www.python.org)
+[![Neo4j](https://img.shields.io/badge/Neo4j-5.24.0-blue?logo=Neo4j&logoColor=#4581C3)](https://neo4j.com/)
 
 
 # Enabling Multi-dimensional Analytics of Digital Traces with Ambiguity
@@ -14,7 +14,7 @@ The prototype implementation accompanies the paper "Enabling Multi-dimensional A
 
 ### 1. Prerequisite
 
-The implementation requires Neo4j as the graph database and Python to run the scripts. *In our tests we employed Neo4j 5.12.0 and Python 3.8.5.*
+The implementation requires Neo4j as the graph database and Python to run the scripts. *In our tests we employed Neo4j 5.24.0 and Python 3.11.10.*
 
 The libraries required to run the program can be installed from the requirements.txt file. They include matplotlib, neo4j, numpy, paho-mqtt, pandas, and validators.
 
