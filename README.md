@@ -40,5 +40,5 @@ After executing, the ```results``` folder contains a csv file and a graph with t
 
 We provide a small sample file under ```logs/extended_event_log_mock.xes```. 
 
-<img src="assets/neo4j_overview" height="30"> <img src="assets/neo4j_ambiguousEvent" height="30"> <img src="assets/neo4j_ambiguousCorrelations" height="30"> <img src="assets/neo4j_ambiguousBoth" height="30">
+<img src="assets/neo4j_overview.png" height="30"> <img src="assets/neo4j_ambiguousEvent.png" height="30"> <img src="assets/neo4j_ambiguousCorrelations.png" height="30"> <img src="assets/neo4j_ambiguousBoth.png" height="30">
 
