@@ -2,4 +2,5 @@ __pycache__
 .pyc
 helpers
 venv
+logs/extended_event_log_12032.xes
 logs/extended_event_log_16032.xes
