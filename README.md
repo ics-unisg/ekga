@@ -1,19 +1,10 @@
 [![Python](https://img.shields.io/badge/python-3.8.5-blue?logo=python&logoColor=FED643)](https://www.python.org)
 [![Neo4j](https://img.shields.io/badge/Neo4j-5.12.0-blue?logo=Neo4j&logoColor=#4581C3)](https://neo4j.com/)
 
-# TO DO
 
-Section below
+# Enabling Multi-dimensional Analytics of Digital Traces with Ambiguity
 
-About (top right side)
-
-Tutorial with extended_mock
-
---- 
-
-# Event Knowledge Graphs ...
-
-This repository contains a prototype implementation of a framework for the online construction of an Event Knowledge Graph from a stream of events.
+This repository contains a prototype implementation of a framework for the construction of an Event Knowledge Graph from a stream of events.
 
 The prototype implementation accompanies the paper "Enabling Multi-dimensional Analytics of Digital Traces with Ambiguity" by Marco Franceschetti, Dominik Manuel Buchegger, Ronny Seiger, and Barbara Weber, submitted to CAiSE2025.
 
@@ -42,3 +33,7 @@ In **main.py** change lines **20-34**.
 Ensure Neo4j is running. Then run **main.py**.
 
 After executing, the ```results``` folder contains a csv file and a graph with the times (in seconds) that Neo4j needed to process each new event in the event stream.
+
+---
+
+## Example
