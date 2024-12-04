@@ -38,7 +38,21 @@ After executing, the ```results``` folder contains a csv file and a graph with t
 
 ## Example
 
-We provide a small sample file under ```logs/extended_event_log_mock.xes```. 
+We provide a small sample file under ```logs/extended_event_log_mock.xes```. We show some screenshots from the constructed graph in Neo4j.
 
-<img src="assets/neo4j_overview.png" height="150"> <img src="assets/neo4j_ambiguousEvent.png" height="150"> <img src="assets/neo4j_ambiguousCorrelations.png" height="150"> <img src="assets/neo4j_ambiguousBoth.png" height="150">
+Here we can see an overview of what the Neo4j graph tracks:
+
+<img src="assets/neo4j_overview.png" height="300">
+
+Here we can see ambiguous events and the resulting DF (left side: DF labeled with corresponding entity, right side: DF labeled with corresponding probability):
+
+<img src="assets/neo4j_ambiguousEvent.png" height="300">
+
+Here we can see ambiguous correlations and the resulting DF (left side: DF labeled with corresponding entity, right side: DF labeled with corresponding probability):
+
+<img src="assets/neo4j_ambiguousCorrelations.png" height="300">
+
+Here we can see ambiguous events & correlations and the resulting DF labeled with probabilities:
+
+<img src="assets/neo4j_ambiguousBoth.png" height="300">
 
