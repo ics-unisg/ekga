@@ -38,7 +38,7 @@ After executing, the ```results``` folder contains a csv file and a graph with t
 
 ## Example
 
-We provide a small sample file under ```logs/extended_event_log_mock.xes```. We show some screenshots from the constructed graph in Neo4j.
+We provide a small sample file under ```logs/extended_event_log_mock.xes```. We show some screenshots of the graph in Neo4j that is constructed from this sample file.
 
 Here we can see an overview of what the Neo4j graph tracks:
 
