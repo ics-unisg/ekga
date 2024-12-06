@@ -24,11 +24,11 @@ password = "12345678"
 # Streaming Source
 USE_MQTT = False # False / "SenderReceiver" / "Receiver"
 # MQTT settings (can leave empty with USE_MQTT=False)
-mqtt_url = "ftsim.weber.ics.unisg.ch"
-mqtt_topic = "smart-healthcare"
+mqtt_url = "change.me"
+mqtt_topic = "change-me"
 mqtt_port = 1883
-mqtt_user = "ftsim"
-mqtt_password = "unisg"
+mqtt_user = "change_me"
+mqtt_password = "change_me"
 
 # User input
 xes_file_path = "logs/extended_event_log_mock.xes" # *path* (for False / "SenderReceiver") / None (for USE_MQTT="Receiver")
