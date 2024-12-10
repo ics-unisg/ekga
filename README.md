@@ -34,6 +34,8 @@ Ensure Neo4j is running. Then run **main.py**.
 
 After executing, the ```results``` folder contains a csv file and a graph with the times (in seconds) that Neo4j needed to process each new event in the event stream.
 
+Logs are provided in the *logs* folder. Log with name ending in "16032" is the log with 400800 events and must be unzipped to be used; log with name ending in "12032" has 300800 events; log with name ending in "8032" has 200800 events; log with name ending in "6432" has 160800 events; log with name ending in "4832" has 120800 events; log with name ending in "3232" has 80800 events; log with name ending in "1632" has 40800 events.
+
 ---
 
 ## Example
