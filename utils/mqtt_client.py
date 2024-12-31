@@ -1,6 +1,7 @@
 ################################################################################################
 #                                                                                                                                                                                            #
-# Copied and adapted from Aaron's code                                                                                                                             #
+# Author: Dominik Manuel Buchegger                                                                                                                                #
+# Code adapted from Original by Aaron Friedrich Kurz                                                                                                      #
 #                                                                                                                                                                                            #
 ################################################################################################
 from abc import ABC
